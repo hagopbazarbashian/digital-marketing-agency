@@ -14,3 +14,5 @@
  <script src="{{ asset('js/vendor/easing.js') }}"></script>
  <!--main script-->
  <script src="{{ asset('js/main.js') }}"></script>
+ {{-- iziToast --}}
+ <script src="{{ asset('js/ iziToast.min.js') }}"></script>

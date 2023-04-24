@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home</title>
+    <title>Ortencey Marketing Agency</title>
 
     @include('layout.style')
 
@@ -86,28 +86,33 @@
                 </div>
             </div>
             <div class="main-navbar">
+                @if (session()->get('succes'))
+                <div class="alert alert-success" role="alert">
+                  {{ session()->get('succes') }}
+                </div>
+                @endif
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="{{ url('/') }}">
                             <img src="img/logo.png" alt="image">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item">
-                                    <a href="{{ url('/') }}" class="nav-link">Home</a>
+                                    <a href="{{ url('/') }}" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{ url('about') }}" class="nav-link">About</a>
+                                    <a href="{{ url('about') }}" class="nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link "> Services <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="service.html" class="nav-link ">Service Page</a>
+                                            <a href="{{ url('service') }}" class="nav-link {{ request()->is('service') ? 'active' : '' }}">Service Page</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="service-details.html" class="nav-link ">Service Details</a>
+                                            <a href="{{ url('service-details') }}" class="nav-link {{ request()->is('service-details') ? 'active' : '' }}">Service Details</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -116,32 +121,32 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="team.html" class="nav-link ">Team</a>
+                                            <a href="{{ url('team') }}" class="nav-link {{ request()->is('team') ? 'active' : '' }}">Team</a>
                                         </li>
-                                        <li class="nav-item">
+                                        {{-- <li class="nav-item">
                                             <a href="team-details.html" class="nav-link ">Team Details</a>
-                                        </li>
+                                        </li> --}}
                                         <li class="nav-item">
-                                            <a href="portfolio.html" class="nav-link ">Portfolio</a>
+                                            <a href="{{ url('portfolio') }}" class="nav-link {{ request()->is('portfolio') ? 'active' : '' }}">Portfolio</a>
                                         </li>
-                                        <li class="nav-item">
+                                        {{-- <li class="nav-item">
                                             <a href="portfolio-details.html" class="nav-link ">Portfolio Details</a>
-                                        </li>
+                                        </li> --}}
                                         <li class="nav-item">
-                                            <a href="pricing.html" class="nav-link ">Pricing</a>
+                                            <a href="{{ url('pricing') }}" class="nav-link {{ request()->is('pricing') ? 'active' : '' }}">Pricing</a>
                                         </li>
-                                        <li class="nav-item">
+                                        {{-- <li class="nav-item">
                                             <a href="testimonial.html" class="nav-link ">Testimonial</a>
-                                        </li>
-                                        <li class="nav-item">
+                                        </li> --}}
+                                        {{-- <li class="nav-item">
                                             <a href="faq.html" class="nav-link ">Faq</a>
-                                        </li>
-                                        <li class="nav-item">
+                                        </li> --}}
+                                        {{-- <li class="nav-item">
                                             <a href="404.html" class="nav-link ">404</a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a href="#" class="nav-link "> Shop <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -158,38 +163,38 @@
                                             <a href="checkout.html" class="nav-link ">Checkout</a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="nav-item">
                                     <a href="#" class="nav-link "> News <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="nav-item">
-                                            <a href="blog-full.html" class="nav-link ">Blog Full</a>
+                                            <a href="{{ url('blog-full') }}" class="nav-link {{ request()->is('blog-full') ? 'active' : '' }}">Blog Full</a>
                                         </li>
-                                        <li class="nav-item">
+                                        {{-- <li class="nav-item">
                                             <a href="blog-right.html" class="nav-link ">Blog Right</a>
-                                        </li>
-                                        <li class="nav-item">
+                                        </li> --}}
+                                        {{-- <li class="nav-item">
                                             <a href="blog-left.html" class="nav-link ">Blog Left</a>
-                                        </li>
+                                        </li> --}}
                                         <li class="nav-item">
-                                            <a href="blog-details.html" class="nav-link ">Blog Details</a>
+                                            <a href="{{ route('blog-details') }}" class="nav-link nav-link {{ request()->is('blog-details') ? 'active' : '' }}">Blog Details</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="contact.html" class="nav-link">Contact</a>
+                                    <a href="{{ url('contact') }}" class="nav-link {{ request()->is('contact') ? 'active' : '' }}">Contact</a>
                                 </li>
                             </ul><!--/.navbar-nav -->
                             <div class="others-options d-flex align-items-center">
                                 <div class="option-item">
                                     <a class="opt" href="#search"><i class="bx bx-search"></i></a>
                                 </div>
-                                <div class="option-item">
+                                {{-- <div class="option-item">
                                     <a class="opt" href="#ortencySlideCartCanvas"  data-bs-toggle="offcanvas" data-bs-target="#ortencySlideCartCanvas" aria-controls="ortencySlideCartCanvas"><i class='bx bx-shopping-bag' ></i><span class="badge">3</span></a>
-                                </div>
+                                </div> --}}
                                 <div class="option-item d-none d-xl-inline-block">
-                                    <a href="contact.html" class="btn">Free Quote <i class='bx bx-right-arrow-alt' ></i></a>
+                                    <a href="{{ url('contact') }}" class="btn">Free Quote <i class='bx bx-right-arrow-alt' ></i></a>
                                 </div>
                             </div><!--/.others-options-->
                         </div>
@@ -330,8 +335,6 @@
 
      <!-- Return to Top -->
     <a href="javascript:" id="return-to-top"><i class="bx bx-chevron-up"></i></a>
-
-    
     @include('layout.underscript')
 
 </body>

@@ -6209,7 +6209,7 @@ start Service support style
 .service-support-sec{
   position: relative;
   z-index: 12;
-  background-image: url(../img/support-bg.jpg);
+  background-image: url(../img/support-bg9000.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -8633,7 +8633,7 @@ Start Blog Pages style
   border: 0;
   position: relative;
   z-index: 1;
-  background-image: url(../img/sidebar-bg.jpg);
+  background-image: url(../img/blog/sidebar-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
