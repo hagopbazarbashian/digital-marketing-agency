@@ -7,7 +7,7 @@
                 <div class="col-12">
                     <div class="sec-title v2 text-center mb-50">
                         <h3><img src="img/icons/title-icon.svg" alt=""> Our Services</h3>
-                        <h1>Best Quality Services</h1>  
+                        <h1>Best Quality Services</h1>
                     </div>
                 </div>
                 <div class="col-12">
@@ -27,7 +27,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xl-2 text-center">
-                                        <a href="#" class="btn style2">Read More</a>
+                                        <a href="{{ route('contact') }}" class="btn style2">Read More</a>
                                     </div>
                                 </div>
                             </div><!--/.single-service-inner_v2-->
@@ -47,7 +47,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xl-2 text-center">
-                                        <a href="#" class="btn style2">Read More</a>
+                                        <a href="{{ route('contact') }}" class="btn style2">Read More</a>
                                     </div>
                                 </div>
                             </div><!--/.single-service-inner_v2-->
@@ -67,7 +67,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xl-2 text-center">
-                                        <a href="#" class="btn style2">Read More</a>
+                                        <a href="{{ route('contact') }}" class="btn style2">Read More</a>
                                     </div>
                                 </div>
                             </div><!--/.single-service-inner_v2-->
@@ -87,7 +87,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-xl-2 text-center">
-                                        <a href="#" class="btn style2">Read More</a>
+                                        <a href="{{ route('contact') }}" class="btn style2">Read More</a>
                                     </div>
                                 </div>
                             </div><!--/.single-service-inner_v2-->
@@ -101,7 +101,7 @@
 
     <!--how-work-v3 start-->
     <div class="how-work-v3 bg-image px-120">
-        <div class="container"> 
+        <div class="container">
             <div class="row g-0">
                 <div class="col-12">
                     <div class="sec-title text-center mb-50">
@@ -178,8 +178,8 @@
                         </div>
                         <p>Enthusiastically architect corporate metrics via enterprise methodologies. Progressively extend distinctive process improvements rather than parallel channels.</p>
                         <div class="btn-groups mt-50">
-                            <a href="#" class="btn btn-default">Set Free Quotes</a>
-                            <a href="#" class="btn btn-transparent">Contact For Us</a>
+                            <a href="{{ route('contact') }}" class="btn btn-default">Set Free Quotes</a>
+                            <a href="{{ route('contact') }}" class="btn btn-transparent">Contact For Us</a>
                         </div>
                     </div><!--/.inner-content-support-->
                 </div>
@@ -196,7 +196,7 @@
     <section class="testimonial-sec px-120">
         <div class="container">
             <div class="row align-items-center align-items-lg-start gy-5">
-                
+
                 <div class="col-md-7 col-lg-6 order-md-2">
                     <div class="right-content-testimonial">
                         <div class="sec-title mb-50">
@@ -249,7 +249,7 @@
                                             <i class='bx bxs-quote-left' ></i>
                                         </div>
                                         <div class="ratings d-flex">
-                                            <i class='bx bxs-star' ></i> 
+                                            <i class='bx bxs-star' ></i>
                                             <i class='bx bxs-star' ></i>
                                             <i class='bx bxs-star' ></i>
                                             <i class='bx bxs-star' ></i>
@@ -341,7 +341,7 @@
                         <div class="custom-paging-testi d-flex justify-content-center flex-column"></div>
                     </div><!--/.right-content-testimonial-->
                 </div>
-                <div class="col-md-5 col-lg-6 order-md-1"> 
+                <div class="col-md-5 col-lg-6 order-md-1">
                     <div class="left-client-images-tbs">
                         <div class="action-hr">
                             <a href="#" class="dts1" data-slide="1"><img src="img/testi200.jpg" alt=""></a>

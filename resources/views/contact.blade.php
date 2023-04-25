@@ -74,16 +74,16 @@
                                         <div class="single-con-dts">
                                             <div class="icon"><i class='bx bxs-phone' ></i></div>
                                             <h2>Phone</h2>
-                                            <a href="tel:98473847383">+(323) 9847 3847 383</a>
-                                            <a href="tel:5466546744">+(434) 5466 5467 44</a>
+                                            <a href="tel:98473847383">+(375)55 4460 12</a>
+                                            <a href="tel:5466546744">+(1)514 781 2513</a>
                                         </div><!--/.single-con-dts-->
                                     </div>
                                     <div class="col-md-6">
                                         <div class="single-con-dts">
                                             <div class="icon"><i class='bx bxs-envelope' ></i></div>
                                             <h2>Email</h2>
-                                            <a href="mailto:infoyour@email.com">infoyour@email.com</a>
-                                            <a href="mailto:domaininfo@email.com">domaininfo@email.com</a>
+                                            <a href="mailto:hagopbazarbasian@gmail.com">hagopbazarbasian@gmail.com</a>
+                                            {{-- <a href="mailto:domaininfo@email.com">hagopbazarbasian@gmail.com</a> --}}
                                         </div><!--/.single-con-dts-->
                                     </div>
                                     <div class="col-md-12">

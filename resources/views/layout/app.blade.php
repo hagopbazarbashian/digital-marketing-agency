@@ -12,14 +12,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="">
+    <meta name="description" content="Ortencey Marketing Agency">
     <meta name="author" content="">
 
     <title>Ortencey Marketing Agency</title>
 
     @include('layout.style')
 
-    @include('layout.script')
+    @include('layout.underscript')
     <!--[if lt IE 9]>
     <script src="js/html5/respond.min.js"></script>
     <![endif]-->
@@ -37,11 +37,11 @@
                         <div class="left-content-top">
                             <ul>
                                 <li class="d-none d-xl-inline-block">Welcome to Ortencey Digital Market Agency</li>
-                                <li>
+                                {{-- <li>
                                     <a href="#"><i class='bx bxs-phone'></i> +88 ( 5548 ) 6548</a>
-                                </li>
+                                </li> --}}
                                 <li>
-                                    <a href="#"><i class='bx bxs-envelope'></i> infoyour@email.com</a>
+                                    <a href="mailto:hagopbazarbasian@gmail.com"><i class='bx bxs-envelope'></i>hagopbazarbasian@gmail.com</a>
                                 </li>
                             </ul>
                         </div><!--/.left-content-top-->
@@ -78,7 +78,7 @@
                 <div class="container">
                     <div class="main-responsive-menu">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="{{ url('/') }}">
                                 <img src="img/logo.png"  alt="image">
                             </a>
                         </div><!--/.logo-->
@@ -201,7 +201,7 @@
                     </nav><!--/.navbar-->
                 </div>
             </div>
-    
+
         </div>
     </header>
     <!-- /.navbar -->
@@ -244,7 +244,7 @@
                             <div class="col-sm-6 col-lg-3">
                                 <div class="ftr-widget about">
                                     <h2>About Company</h2>
-                                    <p>There are many variations of passages of Lore Ipsum availab but the majority have suffereds alteration in some form, by injected humour a randomised words which</p>
+                                    <p>Ortencey is a digital marketing agency that has been providing quality services for seven years. Founded in 2016, the company has established itself as a leader in the digital marketing industry, offering a wide range of services to help businesses enhance their online presence, generate leads, and increase sales.</p>
                                     <ul class="socials">
                                         <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
                                         <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
@@ -271,7 +271,7 @@
                                     <ul class="recent-posts">
                                         <li class="d-flex align-items-center">
                                             <div class="flex-grow-0">
-                                                <img src="img/blog1.jpg" alt="">
+                                                <img src="img/blog1000000.jpg" alt="">
                                             </div>
                                             <div class="flex-shrink-1">
                                                 <a href="blog-details.html">Thoughtful man using laptop pondering </a>
@@ -280,7 +280,7 @@
                                         </li>
                                         <li class="d-flex align-items-center">
                                             <div class="flex-grow-0">
-                                                <img src="img/blog2.jpg" alt="">
+                                                <img src="img/blog200000.jpg" alt="">
                                             </div>
                                             <div class="flex-shrink-1">
                                                 <a href="blog-details.html">Thoughtful man using laptop pondering </a>
@@ -294,13 +294,13 @@
                                 <div class="ftr-widget">
                                     <h2>Contact Us</h2>
                                     <ul class="contacts">
-                                        <li>
+                                        {{-- <li>
                                             <i class='bx bxs-phone' ></i>
                                             <a href="tel:7501234">+(323) 750-1234</a>
-                                        </li>
+                                        </li> --}}
                                         <li>
                                             <i class='bx bxs-envelope' ></i>
-                                            <a href="mailto:infoyourortencey@email.com">infoyourortencey@email.com</a>
+                                            <a href="mailto:hagopbazarbasian@gmail.com">hagopbazarbasian@gmail.com</a>
                                         </li>
                                         <li>
                                             <i class='bx bxs-map' ></i>
@@ -320,7 +320,7 @@
         <div class="container">
             <div class="row gy-3">
                 <div class="col-md-6">
-                    <p>2022 © All rights reserved by devsnest-llc</p>
+                    <p>2023 © All rights reserved by Hag-Web</p>
                 </div>
                 <div class="col-md-6">
                     <ul>
@@ -332,10 +332,8 @@
         </div>
     </div>
     <!--footer area end-->
-
-     <!-- Return to Top -->
+    <!-- Return to Top -->
     <a href="javascript:" id="return-to-top"><i class="bx bx-chevron-up"></i></a>
-    @include('layout.underscript')
-
+    @include('layout.script')
 </body>
 </html>

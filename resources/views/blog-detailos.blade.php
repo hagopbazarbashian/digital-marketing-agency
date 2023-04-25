@@ -53,7 +53,7 @@
                         <div class="img_txt">
                             <div class="row g-4">
                                 <div class="col-sm-6 col-md-5">
-                                    <img src="img/blog/blog-details1.jpg" alt="">
+                                    <img src="img/blog-details1500.jpg" alt="">
                                 </div>
                                 <div class="col-sm-6 col-md-7">
                                     <h2>Let our investment management team</h2>
@@ -74,13 +74,13 @@
                         <div class="imgs">
                             <div class="row g-3">
                                 <div class="col-md-4">
-                                    <img src="img/blog-details2.jpg" alt="">
+                                    <img src="img/blog/blog-details2.jpg" alt="">
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/blog-details3.jpg" alt="">
+                                    <img src="img/blog/blog-details3.jpg" alt="">
                                 </div>
                                 <div class="col-md-4">
-                                    <img src="img/blog-details4.jpg" alt="">
+                                    <img src="img/blog/blog-details4.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@
                             <div class="col-sm-6">
                                 <div class="text-start d-flex icons-go">
                                     <div class="flex-shrink-0">
-                                        <img src="img/blog-full1.jpg" alt="">
+                                        <img src="img/blog/blog-full1.jpg" alt="">
                                     </div>
                                     <div class="flex-grow-1 ms-3">
                                         <h4>Panels with websites a city connections</h4>
@@ -126,7 +126,7 @@
                                         <p><i class="bx bx-calendar"></i>12 Oct 2022</p>
                                     </div>
                                     <div class="flex-shrink-0">
-                                        <img src="img/blog2.jpg" alt="">
+                                        <img src="img/blog/blog2.jpg" alt="">
                                     </div>
                                     <a href="#" class="btn">Next <i class='bx bx-arrow-back bx-rotate-180' ></i></a>
                                 </div>
@@ -141,17 +141,16 @@
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0">
                                             <div class="imgs d-flex align-items-center justify-content-center">
-                                                <img src="img/testi1.png" alt="">
+                                                <img src="img/comment-img/testi1.png" alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
                                             <h3>Jason Roy</h3>
                                             <h5>Oct 12,2022</h5>
-                                            
+
                                         </div>
                                     </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsium has been the industry's standards dummy as text as
-                                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p>I highly recommend this digital marketing agency for their exceptional service and expertise. They have helped my business grow exponentially and have exceeded my expectations in every aspect</p>
                                     <div class="reply-put d-flex">
                                         <input type="text" class="form-control" placeholder="Reply Your Thoughts">
                                         <button class="btn">Reply</button>
@@ -163,17 +162,16 @@
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0">
                                             <div class="imgs d-flex align-items-center justify-content-center">
-                                                <img src="img/testi7.jpg" alt="">
+                                                <img src="img/comment-img/testi7.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
                                             <h3>Monica G.</h3>
                                             <h5>Oct 12,2022</h5>
-                                            
+
                                         </div>
                                     </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsium has been the industry's standards dummy as text as
-                                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p>Working with this digital marketing agency has been a game changer for my business. Their innovative ideas and strategic approach have helped me reach a wider audience and increase my online visibility.</p>
                                     <div class="reply-put d-flex">
                                         <input type="text" class="form-control" placeholder="Reply Your Thoughts">
                                         <button class="btn">Reply</button>
@@ -185,17 +183,16 @@
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0">
                                             <div class="imgs d-flex align-items-center justify-content-center">
-                                                <img src="img/testi3.jpg" alt="">
+                                                <img src="img/comment-img/testi3.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
                                             <h3>Joey T.</h3>
                                             <h5>Oct 12,2022</h5>
-                                            
+
                                         </div>
                                     </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsium has been the industry's standards dummy as text as
-                                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p>If you want to take your digital marketing efforts to the next level, look no further than this agency. Their knowledgeable team and personalized approach have made a significant impact on my online presence and revenue</p>
                                     <div class="reply-put d-flex">
                                         <input type="text" class="form-control" placeholder="Reply Your Thoughts">
                                         <button class="btn">Reply</button>
@@ -207,17 +204,16 @@
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0">
                                             <div class="imgs d-flex align-items-center justify-content-center">
-                                                <img src="img/testi5.jpg" alt="">
+                                                <img src="img/comment-img/testi5.jpg" alt="">
                                             </div>
                                         </div>
                                         <div class="flex-grow-1">
                                             <h3>Phoeebe B.</h3>
                                             <h5>Oct 12,2022</h5>
-                                            
+
                                         </div>
                                     </div>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsium has been the industry's standards dummy as text as
-                                        1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p>I have worked with several digital marketing agencies in the past, but this one stands out from the rest. Their dedication to delivering results and commitment to client satisfaction is truly unmatched.</p>
                                     <div class="reply-put d-flex">
                                         <input type="text" class="form-control" placeholder="Reply Your Thoughts">
                                         <button class="btn">Reply</button>
@@ -295,7 +291,7 @@
                         <div class="r-posts">
                             <div class="d-flex align-items-center">
                                 <div class="flex-grow-0">
-                                    <img src="img/blog1.jpg" alt="">
+                                    <img src="img/blog/blog1.jpg" alt="">
                                 </div>
                                 <div class="flex-shrink-1">
                                     <h5><a href="#">Successful business partners having a meetin</a></h5>
@@ -304,7 +300,7 @@
                             </div>
                             <div class="d-flex align-items-center">
                                 <div class="flex-grow-0">
-                                    <img src="img/blog2.jpg" alt="">
+                                    <img src="img/blog/blog2.jpg" alt="">
                                 </div>
                                 <div class="flex-shrink-1">
                                     <h5><a href="#">Creative designer project our discuss presentation client</a></h5>
@@ -313,7 +309,7 @@
                             </div>
                             <div class="d-flex align-items-center">
                                 <div class="flex-grow-0">
-                                    <img src="img/blog3.jpg" alt="">
+                                    <img src="img/blog/blog3.jpg" alt="">
                                 </div>
                                 <div class="flex-shrink-1">
                                     <h5><a href="#">Front view of is businessman with colorful cones</a></h5>

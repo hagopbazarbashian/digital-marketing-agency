@@ -141,8 +141,8 @@
                         <h3><img src="img/icons/title-icon.svg" alt=""> About Our Company</h3>
                         <h2 class="tag1">Best Digital Marketing Agency For People</h2>
                     </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have as suffered alteration in some form, by injected humour, or randomised words which don't a look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.</p>
-                    <ul class="list-icons d-flex flex-wrap align-items-start">
+                    <p style="margin-top: 27px;">here are many great digital marketing agencies out there, but the best one for you will depend on your specific needs and goals. It's important to look for an agency that has a strong track record of success, a team of experienced and skilled professionals, and a comprehensive range of digital marketing services that align with your objectives. Additionally, a great digital marketing agency will be able to provide personalized and tailored solutions that fit your budget and deliver measurable results. It's always a good idea to do your research, read reviews and testimonials, and schedule consultations with different agencies to find the one that is the best fit for you.</p>
+                    <ul class="list-icons d-flex flex-wrap align-items-start" style="margin-top: 27px;margin-bottom: 17px;">
                         <li>Digital Strategy</li>
                         <li>SEO Optimization</li>
                         <li>Marketing</li>
@@ -231,7 +231,7 @@
                         <h3><img src="img/icons/title-icon-infinity.svg" alt="">Why Choose Ortencey</h3>
                         <h2 class="tag1">Reason For Choosing Our Digital Agency</h2>
                     </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majori suffered alteration in some form, by injected humour, or randomised word whic look even sligh believable. If you are going to use.</p>
+                    <p>Expertise: A good digital agency should have a team of professionals with a wide range of skills and expertise in various areas of digital marketing, such as SEO, PPC, social media marketing, content marketing, email marketing.</p>
                     <div class="single-progress">
                         <label class="d-flex justify-content-between">
                             <span>Software Development</span>
@@ -239,7 +239,7 @@
                         </label>
                         <div class="progress">
                             <div class="progress-bar" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-anchor-placement="top bottom"  role="progressbar" aria-label="Basic example" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                          
+                        </div>
                     </div><!--/.single-progress-->
                     <div class="single-progress">
                         <label class="d-flex justify-content-between">
@@ -248,7 +248,7 @@
                         </label>
                         <div class="progress">
                             <div class="progress-bar" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1200" data-aos-anchor-placement="top bottom"  role="progressbar" aria-label="Basic example" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                          
+                        </div>
                     </div><!--/.single-progress-->
                     <div class="single-progress">
                         <label class="d-flex justify-content-between">
@@ -257,7 +257,7 @@
                         </label>
                         <div class="progress">
                             <div class="progress-bar" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1400" data-aos-anchor-placement="top bottom"  role="progressbar" aria-label="Basic example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                          
+                        </div>
                     </div><!--/.single-progress-->
                 </div><!--/.left-content-choose-->
             </div>
@@ -291,7 +291,8 @@
                             </div>
                             <div class="plan-hdr">
                                 <h2>Basic Plan</h2>
-                                <h1><sup>$</sup>30<small>Per Month</small></h1>
+                                {{-- <h1><sup>$</sup>30<small>Per Month</small></h1> --}}
+                                <h1>Free</h1>
                             </div>
                             <div class="plan-body">
                                 <ul class="list-icons d-flex flex-column align-items-center">
@@ -302,7 +303,7 @@
                                     <li class="dis">Online Support</li>
                                     <li class="dis">Unlimited Updates</li>
                                 </ul>
-                                <a href="#" class="btn">Choose Plan</a>
+                                <a href="{{ url('contact') }}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
                     </div>
@@ -313,7 +314,7 @@
                             </div>
                             <div class="plan-hdr">
                                 <h2>Gold Plan</h2>
-                                <h1><sup>$</sup>60<small>Per Month</small></h1>
+                                <h1><sup>$</sup>30<small>Per Month</small></h1>
                             </div>
                             <div class="plan-body">
                                 <ul class="list-icons d-flex flex-column align-items-center">
@@ -324,7 +325,7 @@
                                     <li class="dis">Online Support</li>
                                     <li>Unlimited Updates</li>
                                 </ul>
-                                <a href="#" class="btn">Choose Plan</a>
+                                <a href="{{ url('contact') }}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
                     </div>
@@ -335,7 +336,7 @@
                             </div>
                             <div class="plan-hdr">
                                 <h2>Silver Plan</h2>
-                                <h1><sup>$</sup>99<small>Per Month</small></h1>
+                                <h1><sup>$</sup>60<small>Per Month</small></h1>
                             </div>
                             <div class="plan-body">
                                 <ul class="list-icons d-flex flex-column align-items-center">
@@ -346,7 +347,7 @@
                                     <li>Online Support</li>
                                     <li>Unlimited Updates</li>
                                 </ul>
-                                <a href="#" class="btn">Choose Plan</a>
+                                <a href="{{ url('contact') }}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
                     </div>
@@ -480,7 +481,7 @@
         <div class="modal-content">
             <div class="modal-body">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                </button>        
+                </button>
                 <!-- 16:9 aspect ratio -->
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="loading" id="video"  allow="autoplay"></iframe>
@@ -488,7 +489,7 @@
             </div>
         </div>
     </div>
-</div> 
+</div>
 
 <!--team area start-->
 <section class="team-area-sec px-120">
@@ -597,12 +598,12 @@
 <section class="testimonial-sec px-120">
     <div class="container">
         <div class="row align-items-center align-items-lg-start gy-5">
-            
+
             <div class="col-md-7 col-lg-6 order-md-2">
                 <div class="right-content-testimonial">
                     <div class="sec-title mb-50">
                         <h3><img src="img/icons/title-icon-infinity.svg" alt="">Testimonial</h3>
-                        <h2 class="tag1">What Our Client Say</h2>
+                        <h1>What Our Client Say</h1>
                     </div>
                     <div class="testimonial-slider-slick">
                         <div class="single">
@@ -619,7 +620,7 @@
                                         <i class='bx bxs-star' ></i>
                                     </div>
                                 </div>
-                                <p>There are many variations of passages of Lorem Ipsum availa the majority have suffered alteration in some form by injecte our, or rando word which don't look even slightly a believable. If you are going to use a passage of Lorem Ipsum, you need sure there isn't anything embarrassing.</p>
+                                <p>Working with Ortencey has been a game-changer for our business. Their social media expertise has helped us increase our online following, generate more leads, and ultimately, grow our revenue.</p>
                                 <h2>Kristin Waon</h2>
                                 <h5>Web Designer</h5>
                             </div><!--/.feedback-inner-single-->
@@ -638,7 +639,7 @@
                                         <i class='bx bxs-star' ></i>
                                     </div>
                                 </div>
-                                <p>There are many variations of passages of Lorem Ipsum availa the majority have suffered alteration in some form by injecte our, or rando word which don't look even slightly a believable. If you are going to use a passage of Lorem Ipsum, you need sure there isn't anything embarrassing.</p>
+                                <p>We were hesitant to invest in social media marketing at first, but Ortencey has completely exceeded our expectations. Their strategic approach and data-driven insights have helped us reach new customers and achieve our business goals.</p>
                                 <h2>John Waon</h2>
                                 <h5>App Designer</h5>
                             </div><!--/.feedback-inner-single-->
@@ -657,7 +658,7 @@
                                         <i class='bx bxs-star' ></i>
                                     </div>
                                 </div>
-                                <p>There are many variations of passages of Lorem Ipsum availa the majority have suffered alteration in some form by injecte our, or rando word which don't look even slightly a believable. If you are going to use a passage of Lorem Ipsum, you need sure there isn't anything embarrassing.</p>
+                                <p>At Ortencey, we're committed to helping our clients succeed on social media. Contact us today to learn more about our services and how we can help your business grow.</p>
                                 <h2>Kim dude</h2>
                                 <h5>Web Developer</h5>
                             </div><!--/.feedback-inner-single-->
@@ -772,7 +773,7 @@
                             <h2 class="text-white tag1">Tell us About Your Business, We are Ready to Solve.</h2>
                         </div>
                         <div class="btn-area">
-                            <a href="contact.html" class="btn btn-default">Contact Us</a>
+                            <a href="{{ url('contact') }}" class="btn btn-default">Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -807,7 +808,7 @@
                                 <img src="img/blog100.jpg" alt="">
                                 <span class="date">09 Dec 2022</span>
                                 <span class="cat">Digital Agency</span>
-                                <a href="blog-details.html" class="single-links">hidden link</a>
+                                <a href="{{ route('blog-details') }}" class="single-links">hidden link</a>
                             </div>
                             <div class="conts">
                                 <ul class="meta">
@@ -815,7 +816,7 @@
                                     <li><img src="img/icons/messages.svg" alt=""> <span>25</span></li>
                                     <li><img src="img/icons/eye.svg" alt=""> <span>120 Views</span></li>
                                 </ul>
-                                <h2><a href="blog-details.html">Successful business partner have a meeting and discussing</a></h2>
+                                <h2><a href="{{ route('blog-details') }}">Successful business partner have a meeting and discussing</a></h2>
                             </div>
                         </div><!--/.single-blog-inner-->
                     </div>
@@ -825,7 +826,7 @@
                                 <img src="img/blog101.jpg" alt="">
                                 <span class="date">09 Dec 2022</span>
                                 <span class="cat">Marketing Agency</span>
-                                <a href="blog-details.html" class="single-links">hidden link</a>
+                                <a href="{{ route('blog-details') }}" class="single-links">hidden link</a>
                             </div>
                             <div class="conts">
                                 <ul class="meta">
@@ -833,7 +834,7 @@
                                     <li><img src="img/icons/messages.svg" alt=""> <span>22</span></li>
                                     <li><img src="img/icons/eye.svg" alt=""> <span>2120 Views</span></li>
                                 </ul>
-                                <h2><a href="blog-details.html">Motivated colleagues celebrating corporate success together</a></h2>
+                                <h2><a href="{{ route('blog-details') }}">Motivated colleagues celebrating corporate success together</a></h2>
                             </div>
                         </div><!--/.single-blog-inner-->
                     </div>
@@ -843,7 +844,7 @@
                                 <img src="img/blog102.jpg" alt="">
                                 <span class="date">09 Nov 2022</span>
                                 <span class="cat">Digital Connect</span>
-                                <a href="blog-details.html" class="single-links">hidden link</a>
+                                <a href="{{ route('blog-details') }}" class="single-links">hidden link</a>
                             </div>
                             <div class="conts">
                                 <ul class="meta">
@@ -851,7 +852,7 @@
                                     <li><img src="img/icons/messages.svg" alt=""> <span>22</span></li>
                                     <li><img src="img/icons/eye.svg" alt=""> <span>120 Views</span></li>
                                 </ul>
-                                <h2><a href="blog-details.html">Man using a tablet to a work and connect with others</a></h2>
+                                <h2><a href="{{ route('blog-details') }}">Man using a tablet to a work and connect with others</a></h2>
                             </div>
                         </div><!--/.single-blog-inner-->
                     </div>

@@ -213,7 +213,7 @@
             </div>
             <div class="col-12">
                 <div class="load-btns mt-50 text-center">
-                    <a href="#" class="btn btn-default">View More Projects</a>
+                    <a href="{{ route('contact') }}" class="btn btn-default">View More Projects</a>
                 </div>
             </div>
         </div>
@@ -221,4 +221,4 @@
 </section>
 <!--portfolio page end-->
 
-@endsection   
+@endsection

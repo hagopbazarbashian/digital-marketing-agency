@@ -16,9 +16,9 @@
 9. contact Form/video style
 10. Team member style
 11. Testimonials style
-12. Promo text style 
-13. Blog post style 
-14. Footer style 
+12. Promo text style
+13. Blog post style
+14. Footer style
 15. Responsive style
 16. Home v2 style (all elements)
 17. Home v3 style (all elements)
@@ -178,7 +178,7 @@ h6 {
 
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
-  
+
   color: #1A1A1A;
 
   margin: 0;
@@ -274,7 +274,7 @@ p{
   margin-right: 10px;
 }
 
-/* This only works with JavaScript, 
+/* This only works with JavaScript,
         if it's not present, don't show loader */
 
 .no-js #loader {
@@ -303,7 +303,7 @@ p{
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 menu style
 
@@ -703,7 +703,7 @@ menu style
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);  
+  background-color: rgba(0, 0, 0, 0.9);
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
@@ -723,7 +723,7 @@ menu style
   -moz-transform: translate(0px, 0px) scale(1, 1);
   -o-transform: translate(0px, 0px) scale(1, 1);
   -ms-transform: translate(0px, 0px) scale(1, 1);
-  transform: translate(0px, 0px) scale(1, 1); 
+  transform: translate(0px, 0px) scale(1, 1);
   opacity: 1;
 }
 
@@ -970,15 +970,15 @@ menu style
   width: 10px;
 }
 .ortency-shopping-cart-slide::-webkit-scrollbar-track {
-  background: #fff; 
+  background: #fff;
   border-radius: 10px;
 }
 .ortency-shopping-cart-slide::-webkit-scrollbar-thumb {
-  background:#D9D9D9; 
+  background:#D9D9D9;
   border-radius: 10px;
 }
 .ortency-shopping-cart-slide::-webkit-scrollbar-thumb:hover {
-  background:#D9D9D9; 
+  background:#D9D9D9;
 }
 
 /*sticky menu*/
@@ -1025,14 +1025,14 @@ menu style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 close menu style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Banner style
 
@@ -1152,7 +1152,7 @@ Start Banner style
 .right-content-hero .imgs:after{
   content: '';
   border-radius: 100%;
-  border: 2px solid rgba(254, 101, 27, 0.3); 
+  border: 2px solid rgba(254, 101, 27, 0.3);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -1288,14 +1288,14 @@ Start Banner style
   border-radius: 50%;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Banner style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start About  style
 
@@ -1371,14 +1371,14 @@ Start About  style
   margin-top: 44px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close About  style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Services  style
 
@@ -1437,7 +1437,7 @@ Start Services  style
   color: #3661FC;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Services  style
 
@@ -1445,7 +1445,7 @@ Close Services  style
 
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Why choose  style
 
@@ -1565,7 +1565,7 @@ Start Why choose  style
   line-height: 56px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Why choose  style
 
@@ -1573,7 +1573,7 @@ Close Why choose  style
 
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Pricing plan  style
 
@@ -1691,14 +1691,14 @@ Start Pricing plan  style
   background: linear-gradient(90deg, #FE651B -0.02%, #FFAA52 100.06%);
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Pricing plan  style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Fun fact style
 
@@ -1743,7 +1743,7 @@ Start Fun fact style
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Fun fact style
 
@@ -1751,7 +1751,7 @@ Close Fun fact style
 
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start contact Form/video style
 
@@ -1785,7 +1785,7 @@ Start contact Form/video style
 
 .left-content-video-modal{
   position: relative;
-  background-image: url(../img/video-bg.jpg);
+  background-image: url(../img/video-bg20000.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1949,14 +1949,14 @@ Start contact Form/video style
   margin-top: 30px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close contact Form/video style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 start Team member style
 
@@ -2043,7 +2043,7 @@ start Team member style
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Team member style
 
@@ -2051,7 +2051,7 @@ Close Team member style
 
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Testimonials  style
 
@@ -2310,14 +2310,14 @@ Start Testimonials  style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Testimonials  style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Promo text style
 
@@ -2381,13 +2381,13 @@ Start Promo text style
   max-width: 693px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Promo text style
 
 -------------------------------- */
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Blog post style
 
@@ -2517,16 +2517,16 @@ Start Blog post style
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Blog post style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-Start Footer style 
+Start Footer style
 
 -------------------------------- */
 .footers{
@@ -2783,16 +2783,16 @@ Start Footer style
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-Close Footer style 
+Close Footer style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-Start Responsive style 
+Start Responsive style
 
 -------------------------------- */
 
@@ -2931,7 +2931,7 @@ Start Responsive style
       color: #3661FC;
   }
   .main-responsive-nav .mean-container a.meanmenu-reveal span{
-    background: #3661FC;    
+    background: #3661FC;
   }
 
   .main-responsive-nav .logo a {
@@ -2957,7 +2957,7 @@ Start Responsive style
   .navbar-nav .nav-item .dropdown-menu .nav-item{
     padding: 0;
   }
-  
+
   .right-content-hero .imgs{
     margin: auto;
   }
@@ -3058,8 +3058,8 @@ Start Responsive style
     font-size: 36px;
     line-height: 46px;
   }
-  
-  
+
+
   .pt-120{
     padding-top: 80px;
   }
@@ -3315,16 +3315,16 @@ Start Responsive style
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-Close Responsive style 
+Close Responsive style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-Start Home v2 style 
+Start Home v2 style
 
 -------------------------------- */
 
@@ -3337,7 +3337,7 @@ Start Home v2 style
   z-index: 999;
 }
 .top_nav_soc.v2{
-  background: #3661FC; 
+  background: #3661FC;
   border-radius: 0 0 30px 30px;
 }
 .top_nav_soc.v2:after{
@@ -4502,7 +4502,7 @@ Start Home v2 style
     padding: 20px 25px;
   }
 
-  
+
 
 }
 
@@ -4534,16 +4534,16 @@ Start Home v2 style
 
 /*responsive*/
 
-/* -------------------------------- 
+/* --------------------------------
 
-Close Home v2 style 
+Close Home v2 style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
-Start Home v3 style 
+Start Home v3 style
 
 -------------------------------- */
 
@@ -5142,7 +5142,7 @@ Start Home v3 style
 }
 .inner-portfolio-sing .overlay-content{
   width: 96%;
-  
+
   height: 0;
   opacity: 0;
   position: absolute;
@@ -5260,7 +5260,7 @@ Start Home v3 style
   padding-right: 20px;
   overflow: hidden;
 }
-.team-member-inner.v3 .cont .name, 
+.team-member-inner.v3 .cont .name,
 .team-member-inner.v3 .cont .socials{
   position: unset;
   transform: unset;
@@ -5283,7 +5283,7 @@ Start Home v3 style
   text-align: center;
   padding: 20px 0;
   transition: 0.3s all ease-in-out;
-  
+
 }
 .team-member-inner.v3:hover .socials_v3 {
   bottom: 0;
@@ -5632,7 +5632,7 @@ Start Home v3 style
   .extra-margin-sec{
     padding: 0;
   }
- 
+
 }
 @media (max-width:1280px){
 
@@ -5767,7 +5767,7 @@ Start Home v3 style
     padding-right: 40px;
     padding-left: 40px;
   }
-  
+
 }
 
 @media (max-width:991px){
@@ -5962,19 +5962,19 @@ Start Home v3 style
 
 /*responsive*/
 
-/* -------------------------------- 
+/* --------------------------------
 
-Close Home v3 style 
+Close Home v3 style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 start Page Banner all style
 
 -------------------------------- */
-.page-banner-brd{ 
+.page-banner-brd{
   width: 100%;
   background-image: url(../img/page-banner/about-banner.jpg);
   background-repeat: no-repeat;
@@ -5992,7 +5992,7 @@ start Page Banner all style
   width: 182px;
   height: 182px;
   bottom: -60px;
-} 
+}
 .page-banner-brd .shape-top-left:after{
   display: none;
 }
@@ -6031,14 +6031,14 @@ start Page Banner all style
   background-clip: text;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Page Banner all style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start About page style
 
@@ -6119,7 +6119,7 @@ Start About page style
 .inner-tbs-success .d-sm-flex img {
   margin-right: 30px;
   animation: animName 5s linear infinite;
-  
+
 }
 @keyframes animName {
   0%{
@@ -6192,20 +6192,20 @@ Start About page style
     display: block;
   }
 }
- 
-/* -------------------------------- 
+
+/* --------------------------------
 
 Close About page style
 
 -------------------------------- */
- 
 
-/* -------------------------------- 
+
+/* --------------------------------
 
 start Service support style
 
 -------------------------------- */
- 
+
 .service-support-sec{
   position: relative;
   z-index: 12;
@@ -6320,14 +6320,14 @@ start Service support style
 
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 close Service support style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Service details page style
 
@@ -6517,7 +6517,7 @@ Start Service details page style
   padding-top: 5px;
 }
 .service-widget-right.forms .form-control{
-  margin-top: 20px; 
+  margin-top: 20px;
   padding: 15px 26px;
 }
 .service-widget-right.forms .btn{
@@ -6534,14 +6534,14 @@ Start Service details page style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Service details page style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Team details page style
 
@@ -6730,14 +6730,14 @@ Start Team details page style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Team details page style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 start Portfolio details page style
 
@@ -6882,14 +6882,14 @@ start Portfolio details page style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 End Portfolio details page style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Faq page style
 
@@ -6918,14 +6918,14 @@ Start Faq page style
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Faq page style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Shop page style
 
@@ -7335,14 +7335,14 @@ color: #1A1A1A;
   line-height: 25px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 End Shop page style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Shop Details page style
 
@@ -7981,14 +7981,14 @@ Start Shop Details page style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Shop Details page style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Shop Cart page style
 
@@ -8273,7 +8273,7 @@ Start Shop Cart page style
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Shop Cart page style
 
@@ -8281,7 +8281,7 @@ Close Shop Cart page style
 
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Shop Checkout page style
 
@@ -8488,14 +8488,14 @@ Start Shop Checkout page style
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Shop Checkout page style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Blog Pages style
 
@@ -8682,14 +8682,14 @@ Start Blog Pages style
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Blog Pages style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Blog Details style
 
@@ -8791,7 +8791,7 @@ Start Blog Details style
   margin-top: 40px;
 }
 .blog-details-wrap .img_txt p{
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 .blog-details-wrap .img_txt ul{
   margin-top: 20px;
@@ -8987,14 +8987,14 @@ line-height: 14px;
   border-radius: 50px;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Blog Details style
 
 -------------------------------- */
 
 
-/* -------------------------------- 
+/* --------------------------------
 
 Start Contact page style
 
@@ -9146,7 +9146,7 @@ Start Contact page style
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Close Contact page style
 
@@ -9159,3 +9159,8 @@ Close Contact page style
   margin-top: 17px;
   margin-bottom: 40px;
 }
+
+.align-items-start{
+    align-items: flex-start!important;
+}
+

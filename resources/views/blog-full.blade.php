@@ -49,7 +49,7 @@
                                 <div class="d-flex align-items-center author">
                                     <div class="d-flex align-items-center me-5">
                                         <div class="flex-grow-0">
-                                            <img src="img/testi3.jpg" alt="">
+                                            <img src="img/comment-img/testi1.jpg" alt="">
                                         </div>
                                         <div class="flex-shrink-1">
                                             <p>by Kristin</p>
@@ -77,7 +77,7 @@
                                 <div class="d-flex align-items-center author">
                                     <div class="d-flex align-items-center me-5">
                                         <div class="flex-grow-0">
-                                            <img src="img/testi3.jpg" alt="">
+                                            <img src="img/comment-img/testi1.png" alt="">
                                         </div>
                                         <div class="flex-shrink-1">
                                             <p>by Kristin</p>
@@ -105,7 +105,7 @@
                                 <div class="d-flex align-items-center author">
                                     <div class="d-flex align-items-center me-5">
                                         <div class="flex-grow-0">
-                                            <img src="img/testi3.jpg" alt="">
+                                            <img src="img/comment-img/testi1.png" alt="">
                                         </div>
                                         <div class="flex-shrink-1">
                                             <p>by Kristin</p>
@@ -133,7 +133,7 @@
                                 <div class="d-flex align-items-center author">
                                     <div class="d-flex align-items-center me-5">
                                         <div class="flex-grow-0">
-                                            <img src="img/testi3.jpg" alt="">
+                                            <img src="img/comment-img/testi1.png" alt="">
                                         </div>
                                         <div class="flex-shrink-1">
                                             <p>by Kristin</p>
@@ -161,7 +161,7 @@
                                 <div class="d-flex align-items-center author">
                                     <div class="d-flex align-items-center me-5">
                                         <div class="flex-grow-0">
-                                            <img src="img/testi3.jpg" alt="">
+                                            <img src="img/comment-img/testi1.png" alt="">
                                         </div>
                                         <div class="flex-shrink-1">
                                             <p>by Kristin</p>
@@ -252,7 +252,7 @@
                                     <p><i class='bx bx-calendar' ></i> 27 oct 2022</p>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center"> 
+                            <div class="d-flex align-items-center">
                                 <div class="flex-grow-0">
                                     <img src="img/blog/blog3.jpg" alt="">
                                 </div>
@@ -282,7 +282,7 @@
                         <div class="content-inner">
                             <h3>Help to Create Great Business Agency Future</h3>
                             <p>Sit amet consectetur adipiscing elseds do eius mod tempor incididunt</p>
-                            <a href="#" class="btn btn-default">Contact Us</a>
+                            <a href="{{ route('contact') }}" class="btn btn-default">Contact Us</a>
                         </div>
                     </div><!--/.product-filter-single-->
                 </div><!--/.blog-sidebar-wrap-->

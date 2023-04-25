@@ -109,8 +109,8 @@
                         <h3><img src="img/icons/title-icon.svg" alt=""> About Our Company</h3>
                         <h2 class="tag1">Best Digital Marketing Agency For People</h2>
                     </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have as suffered alteration in some form, by injected humour, or randomised words which don't a look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.</p>
-                    <ul class="list-icons d-flex flex-wrap align-items-start">
+                    <p style="margin-top: 27px;">here are many great digital marketing agencies out there, but the best one for you will depend on your specific needs and goals. It's important to look for an agency that has a strong track record of success, a team of experienced and skilled professionals, and a comprehensive range of digital marketing services that align with your objectives. Additionally, a great digital marketing agency will be able to provide personalized and tailored solutions that fit your budget and deliver measurable results. It's always a good idea to do your research, read reviews and testimonials, and schedule consultations with different agencies to find the one that is the best fit for you.</p>
+                    <ul class="list-icons d-flex flex-wrap align-items-start" style="margin-top: 27px;margin-bottom: 17px;">
                         <li>Digital Strategy</li>
                         <li>SEO Optimization</li>
                         <li>Marketing</li>
@@ -134,7 +134,7 @@
                         <h3><img src="img/icons/title-icon-infinity.svg" alt="">Why Choose Ortencey</h3>
                         <h2 class="tag1">Reason For Choosing Our Digital Agency</h2>
                     </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majori suffered alteration in some form, by injected humour, or randomised word whic look even sligh believable. If you are going to use.</p>
+                    <p>Expertise: A good digital agency should have a team of professionals with a wide range of skills and expertise in various areas of digital marketing, such as SEO, PPC, social media marketing, content marketing, email marketing.</p>
                     <div class="single-progress">
                         <label class="d-flex justify-content-between">
                             <span>Software Development</span>
@@ -142,7 +142,7 @@
                         </label>
                         <div class="progress">
                             <div class="progress-bar" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-anchor-placement="top bottom"  role="progressbar" aria-label="Basic example" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                          
+                        </div>
                     </div><!--/.single-progress-->
                     <div class="single-progress">
                         <label class="d-flex justify-content-between">
@@ -151,7 +151,7 @@
                         </label>
                         <div class="progress">
                             <div class="progress-bar" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1200" data-aos-anchor-placement="top bottom"  role="progressbar" aria-label="Basic example" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                          
+                        </div>
                     </div><!--/.single-progress-->
                     <div class="single-progress">
                         <label class="d-flex justify-content-between">
@@ -160,7 +160,7 @@
                         </label>
                         <div class="progress">
                             <div class="progress-bar" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1400" data-aos-anchor-placement="top bottom"  role="progressbar" aria-label="Basic example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>                          
+                        </div>
                     </div><!--/.single-progress-->
                 </div><!--/.left-content-choose-->
             </div>
@@ -197,7 +197,7 @@
                           <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#our_mission_id" type="button" role="tab" aria-controls="our_mission_id" aria-selected="true">Our Mission</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#our_vission_id" type="button" role="tab" aria-controls="our_vission_id" aria-selected="false">Our Vission</button>
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#our_vission_id" type="button" role="tab" aria-controls="our_vission_id" aria-selected="false">Experience</button>
                         </li>
                         <li class="nav-item" role="presentation">
                           <button class="nav-link" data-bs-toggle="tab" data-bs-target="#our_history_id" type="button" role="tab" aria-controls="our_history_id" aria-selected="false">Our History</button>
@@ -206,7 +206,7 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="our_mission_id" role="tabpanel" aria-labelledby="our_mission_id">
                             <div class="inner-tbs-success">
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majori suffered alteration in some form, by injected humour, or randomised word whic look even sligh believable. If you are going to use.</p>
+                                <p>To find a quality and experienced digital marketing agency, there are several factors you should consider:</p>
                                 <div class="d-sm-flex align-items-center">
                                     <img src="img/worldMap.png" alt="">
                                     <ul class="list-icons">
@@ -220,7 +220,7 @@
                         </div>
                         <div class="tab-pane fade" id="our_vission_id" role="tabpanel" aria-labelledby="our_vission_id">
                             <div class="inner-tbs-success">
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majori suffered alteration in some form, by injected humour, or randomised word whic look even sligh believable. If you are going to use.</p>
+                                <p>Experience: Choose an agency with experience in your industry or niche. They will have a better understanding of your target audience and what works in your market.</p>
                                 <div class="d-sm-flex align-items-center">
                                     <img src="img/worldMap.png" alt="">
                                     <ul class="list-icons">
@@ -234,7 +234,7 @@
                         </div>
                         <div class="tab-pane fade" id="our_history_id" role="tabpanel" aria-labelledby="our_history_id">
                             <div class="inner-tbs-success">
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majori suffered alteration in some form, by injected humour, or randomised word whic look even sligh believable. If you are going to use.</p>
+                                <p>The term Digital Marketing was first used in the 1990s. The digital age took off with the coming of the internet and the development of the Web 1.0 platform. The Web 1.0 platform allowed users to find the information they wanted but did not allow them to share this information over the web. Up until then, marketers worldwide were still unsure of the digital platform. They were not sure if their strategies would work since the internet had not yet seen widespread deployment.</p>
                                 <div class="d-sm-flex align-items-center">
                                     <img src="img/worldMap.png" alt="">
                                     <ul class="list-icons">
@@ -247,7 +247,7 @@
                             </div><!--/.inner-tbs-success-->
                         </div>
                     </div>
-                      
+
                 </div><!--/.success-tabs-about-->
             </div>
         </div>
@@ -432,4 +432,4 @@
     </div><!--/.container-->
 </div>
 <!--fun fact end-->
-@endsection  
+@endsection

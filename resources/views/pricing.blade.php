@@ -46,7 +46,8 @@
                             </div>
                             <div class="plan-hdr">
                                 <h2>Basic Plan</h2>
-                                <h1><sup>$</sup>30<small>Per Month</small></h1>
+                                {{-- <h1><sup>$</sup>30<small>Per Month</small></h1> --}}
+                                <h1>Free</h1>
                             </div>
                             <div class="plan-body">
                                 <ul class="list-icons d-flex flex-column align-items-center">
@@ -57,7 +58,7 @@
                                     <li class="dis">Online Support</li>
                                     <li class="dis">Unlimited Updates</li>
                                 </ul>
-                                <a href="#" class="btn">Choose Plan</a>
+                                <a href="{{ route('contact') }}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
                     </div>
@@ -68,7 +69,7 @@
                             </div>
                             <div class="plan-hdr">
                                 <h2>Gold Plan</h2>
-                                <h1><sup>$</sup>60<small>Per Month</small></h1>
+                                <h1><sup>$</sup>30<small>Per Month</small></h1>
                             </div>
                             <div class="plan-body">
                                 <ul class="list-icons d-flex flex-column align-items-center">
@@ -79,7 +80,7 @@
                                     <li class="dis">Online Support</li>
                                     <li>Unlimited Updates</li>
                                 </ul>
-                                <a href="#" class="btn">Choose Plan</a>
+                                <a href="{{ route('contact') }}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
                     </div>
@@ -90,7 +91,7 @@
                             </div>
                             <div class="plan-hdr">
                                 <h2>Silver Plan</h2>
-                                <h1><sup>$</sup>99<small>Per Month</small></h1>
+                                <h1><sup>$</sup>60<small>Per Month</small></h1>
                             </div>
                             <div class="plan-body">
                                 <ul class="list-icons d-flex flex-column align-items-center">
@@ -101,7 +102,7 @@
                                     <li>Online Support</li>
                                     <li>Unlimited Updates</li>
                                 </ul>
-                                <a href="#" class="btn">Choose Plan</a>
+                                <a href="{{ route('contact') }}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
                     </div>
