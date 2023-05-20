@@ -50,11 +50,11 @@
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">
-                                        <a href="portfolio-details.html" class="btn"><i class='bx bx-plus'></i></a>
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="portfolio-details.html" class="go-hidden"><i class='bx bx-plus'></i></a>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
                         </div><!--/.portfolio-inner-sl-->
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -69,11 +69,11 @@
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">
-                                        <a href="portfolio-details.html" class="btn"><i class='bx bx-plus'></i></a>
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="portfolio-details.html" class="go-hidden"><i class='bx bx-plus'></i></a>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
                         </div><!--/.portfolio-inner-sl-->
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -88,11 +88,11 @@
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">
-                                        <a href="portfolio-details.html" class="btn"><i class='bx bx-plus'></i></a>
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="portfolio-details.html" class="go-hidden"><i class='bx bx-plus'></i></a>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
                         </div><!--/.portfolio-inner-sl-->
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -107,11 +107,11 @@
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">
-                                        <a href="portfolio-details.html" class="btn"><i class='bx bx-plus'></i></a>
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="portfolio-details.html" class="go-hidden"><i class='bx bx-plus'></i></a>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
                         </div><!--/.portfolio-inner-sl-->
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -126,11 +126,11 @@
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">
-                                        <a href="portfolio-details.html" class="btn"><i class='bx bx-plus'></i></a>
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="portfolio-details.html" class="go-hidden"><i class='bx bx-plus'></i></a>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
                         </div><!--/.portfolio-inner-sl-->
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -145,11 +145,11 @@
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">
-                                        <a href="portfolio-details.html" class="btn"><i class='bx bx-plus'></i></a>
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="portfolio-details.html" class="go-hidden"><i class='bx bx-plus'></i></a>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
                         </div><!--/.portfolio-inner-sl-->
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -164,11 +164,11 @@
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">
-                                        <a href="portfolio-details.html" class="btn"><i class='bx bx-plus'></i></a>
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="portfolio-details.html" class="go-hidden"><i class='bx bx-plus'></i></a>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
                         </div><!--/.portfolio-inner-sl-->
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -183,11 +183,11 @@
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">
-                                        <a href="portfolio-details.html" class="btn"><i class='bx bx-plus'></i></a>
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="portfolio-details.html" class="go-hidden"><i class='bx bx-plus'></i></a>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
                         </div><!--/.portfolio-inner-sl-->
                     </div>
                     <div class="col-md-6 col-lg-4">
@@ -202,11 +202,49 @@
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">
-                                        <a href="portfolio-details.html" class="btn"><i class='bx bx-plus'></i></a>
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="portfolio-details.html" class="go-hidden"><i class='bx bx-plus'></i></a>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+                        </div><!--/.portfolio-inner-sl-->
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-inner-sl">
+                            <div class="imgs">
+                                <img src="img/8b75d6197aa027b41cd8c96776ac5c77.jpg" alt="">
+                            </div>
+                            <div class="hidden-cont">
+                                <div class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <h3>UEX.</h3>
+                                        {{-- <p>Print, Books</p> --}}
+                                    </div>
+                                    <div class="btns">
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+                        </div><!--/.portfolio-inner-sl-->
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-inner-sl">
+                            <div class="imgs">
+                                <img src="img/e480b7b7e33eaa4a13113bb7a6d9f6fd.jpg" alt="">
+                            </div>
+                            <div class="hidden-cont">
+                                <div class="d-flex justify-content-between">
+                                    <div class="name">
+                                        <h3>Elnarti.</h3>
+                                        {{-- <p>Print, Books</p> --}}
+                                    </div>
+                                    <div class="btns">
+                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
                         </div><!--/.portfolio-inner-sl-->
                     </div>
                 </div>
