@@ -285,7 +285,7 @@
             <div class="col-12">
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-6 col-xl-4">
-                        <div class="single-plan-area" data-aos="fade-up" data-aos-delay="100">
+                        <div class="single-plan-area features" data-aos="fade-up" data-aos-delay="100">
                             <div class="icons">
                                 <img src="img/icons/plan1.svg" alt="">
                             </div>
@@ -299,7 +299,7 @@
                                     <li>Free Consultations</li>
                                     <li>Business Planning</li>
                                     <li>Investment Process</li>
-                                    <li class="dis">Market Research</li>
+                                    <li>Basic web page</li>
                                     <li class="dis">Online Support</li>
                                     <li class="dis">Unlimited Updates</li>
                                 </ul>
@@ -308,7 +308,7 @@
                         </div><!--/.single-plan-area-->
                     </div>
                     <div class="col-md-6 col-xl-4">
-                        <div class="single-plan-area features" data-aos="fade-up" data-aos-delay="300">
+                        <div class="single-plan-area" data-aos="fade-up" data-aos-delay="300">
                             <div class="icons">
                                 <img src="img/icons/plan2.svg" alt="">
                             </div>
@@ -374,7 +374,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-shrink-1">
-                                        <h2 class="counter">1500</h2>
+                                        <h2 class="counter">300</h2>
                                         <p>Project Complete</p>
                                     </div>
                                 </div>
@@ -389,7 +389,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-shrink-1">
-                                        <h2 class="counter">8562</h2>
+                                        <h2 class="counter">200</h2>
                                         <p>Satisfied Clients</p>
                                     </div>
                                 </div>
@@ -404,7 +404,7 @@
                                         </div>
                                     </div>
                                     <div class="flex-shrink-1">
-                                        <h2 class="counter">35</h2>
+                                        <h2 class="counter">3</h2>
                                         <p>Award win</p>
                                     </div>
                                 </div>
@@ -427,7 +427,7 @@
                     <div class="row g-4 gy-5">
                         <div class="col-md-6">
                             <div class="left-content-video-modal d-flex align-items-center flex-column">
-                                <a href="#" class="video-btn" data-bs-toggle="modal" data-bs-target="#myModalVideo" data-src="https://www.youtube.com/embed/bON-KPiiNCk">
+                                <a href="#" class="video-btn" data-bs-toggle="modal" data-bs-target="#myModalVideo" data-src="">
                                     <div class="button-outer-circle has-scale-animation"></div>
                                     <div class="button-outer-circle has-scale-animation has-delay-short"></div>
                                     <div class="button-icon is-play">
@@ -440,25 +440,43 @@
                             </div><!--/.left-content-video-modal-->
                         </div>
                         <div class="col-md-6">
+                            @if(session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                            @endif
                             <div class="right-contact-frm">
                                 <div class="sec-title">
                                     <h3 class="text-white"><img src="img/icons/title-icon-infinity.svg" alt="">Make an Appointment</h3>
                                     <h2 class="text-white tag1">Start New Project With Us</h2>
                                 </div>
                                 <div class="forms-wrap-cont pt-50">
-                                    <form>
+                                    <form action="{{route('store-appointment')}}" method="post">
+                                        @csrf
                                         <div class="row g-3">
                                             <div class="col-md-6">
-                                                <input type="text" class="form-control" placeholder="Your Name">
+                                                <input type="text" class="form-control" name="name" placeholder="name" value="{{ old('name') }}" @error('name') style="border: 1px solid red;" @enderror>
+                                                @error('name')
+                                                  <p>{{ $message }}</p>
+                                                @enderror
                                             </div>
                                             <div class="col-md-6">
-                                                <input type="email" class="form-control" placeholder="Email Address">
+                                                <input type="email" class="form-control" name="email" placeholder="Email Address" value="{{ old('email') }}" @error('email') style="border: 1px solid red;" @enderror>
+                                                @error('email')
+                                                  <p>{{ $message }}</p>
+                                                @enderror
                                             </div>
                                             <div class="col-md-12">
-                                                <input type="text" class="form-control" placeholder="Business Topic">
+                                                <input type="text" class="form-control" name="topic" placeholder="Business Topic" value="{{ old('topic') }}" @error('topic') style="border: 1px solid red;" @enderror>
+                                                @error('topic')
+                                                  <p>{{ $message }}</p>
+                                                @enderror
                                             </div>
                                             <div class="col-md-12">
-                                                <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                                                <textarea class="form-control" rows="4" name="body" placeholder="Your Message" value="{{ old('body') }}" @error('body') style="border: 1px solid red;" @enderror></textarea>
+                                                @error('body')
+                                                  <p>{{ $message }}</p>
+                                                @enderror
                                             </div>
                                             <div class="col-md-12">
                                                 <button type="submit" class="btn btn-default">Send Message</button>

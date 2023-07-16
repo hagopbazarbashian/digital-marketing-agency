@@ -16,4 +16,4 @@ class contact extends Model
 
     ];
 
-}
+} 

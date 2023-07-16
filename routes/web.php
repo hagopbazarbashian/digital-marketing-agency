@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InfoController;
 use App\Http\Controllers\BlogDetailsmController;
+use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\Admin\AdminLoginController;
+use App\Http\Controllers\Admin\AdminHomeController;
+use App\Http\Controllers\Admin\AdminBasicWebPage;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,7 +49,7 @@ Route::get('portfolio', function () {
 
 Route::get('pricing', function () {
     return view('pricing');
-});  
+});
 
 Route::get('blog-full', function () {
     return view('blog-full');
@@ -59,3 +63,18 @@ Route::post('contact' , [InfoController::class , 'contact'])->name('contact');
 // Blog Detalis
 Route::get('blog-details' , [BlogDetailsmController::class , 'index'])->name('blog-details');
 
+// Appointment
+Route::post('/store' ,[AppointmentController::class , 'store'])->name('store-appointment');
+
+// Admin
+
+Route::get('/admin/login',[AdminLoginController::class , 'index'])->name('admin_login');
+Route::post('/login-submit' , [AdminLoginController::class  , 'login_submit'])->name('admin_login_submit');
+Route::get('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin_logout');
+
+
+
+Route::middleware('admin:admin')->group(function () {
+    Route::resource('admin' , AdminHomeController::class);
+    Route::resource('basic-page' , AdminBasicWebPage::class);
+});
