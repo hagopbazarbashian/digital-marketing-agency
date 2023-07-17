@@ -303,7 +303,7 @@
                                     <li class="dis">Online Support</li>
                                     <li class="dis">Unlimited Updates</li>
                                 </ul>
-                                <a href="{{ url('contact') }}" class="btn">Choose Plan</a>
+                                <a href="{{route('basic-plan')}}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
                     </div>
@@ -357,7 +357,58 @@
     </div><!--/.container-->
 </section>
 <!--pricing plan end-->
+<!-- Button to trigger the modal -->
+<button type="button" id="openButton" class="btn mod btn-primary">Open Modal</button>
 
+{{-- <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <section class="pricing-plan-sec pt-120">
+                    <div class="container">
+                        <div class="row g-0">
+                            <div class="col-12">
+                                <div class="sec-title text-center mb-50">
+                                    <h3><img src="img/icons/title-icon-infinity.svg" alt=""> Our Pricing</h3>
+                                    <h2 class="tag1">Our Best Pricing Plan</h2>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row g-4 justify-content-center">
+                                    <div class="col-md-6 col-xl-4">
+                                        <div class="single-plan-area features" data-aos="fade-up" data-aos-delay="100">
+                                            <div class="icons">
+                                                <img src="img/icons/plan1.svg" alt="">
+                                            </div>
+                                            <div class="plan-hdr">
+                                                <h2>Basic Plan</h2>
+                                                <h1>Free</h1>
+                                            </div>
+                                            <div class="plan-body">
+                                                <ul class="list-icons d-flex flex-column align-items-center">
+                                                    <li>Free Consultations</li>
+                                                    <li>Business Planning</li>
+                                                    <li>Investment Process</li>
+                                                    <li>Basic web page</li>
+                                                    <li class="dis">Online Support</li>
+                                                    <li class="dis">Unlimited Updates</li>
+                                                </ul>
+                                                <a href="{{ route('basic-plan') }}" class="btn">Choose Plan</a>
+                                            </div>
+                                        </div><!--/.single-plan-area-->
+                                    </div>
+                                    <!-- Add other plan sections here if needed -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/.container-->
+                </section>
+            </div>
+        </div>
+    </div>
+</div> --}}
 <!--fun fact start-->
 <div class="fun-fact-sec pt-120">
     <div class="container">

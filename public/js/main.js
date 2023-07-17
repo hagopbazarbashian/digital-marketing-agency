@@ -12,7 +12,7 @@ $(function($) {
   /*=========================== preloader ===========================*/
 
   /*=========================== meanmenu active ===========================*/
-  
+
   $('.mean-menu').meanmenu({
       meanScreenWidth: "992"
    });
@@ -31,24 +31,24 @@ $(window).on('scroll', function() {
 
   /*=========================== poup search ===========================*/
 
- 
+
 $('a[href="#search"]').on('click', function(event) {
         event.preventDefault();
         $('#search').addClass('open');
         $('#search > form > input[type="search"]').focus();
     });
-    
+
     $('#search, #search button.close').on('click keyup', function(event) {
         if (event.target == this || event.target.className == 'close' || event.keyCode == 27) {
             $(this).removeClass('open');
         }
     });
-    
+
 /*=========================== poup search ===========================*/
 
 
 /*=========================== click to top ===========================*/
-  // ===== Scroll to Top ==== 
+  // ===== Scroll to Top ====
   $(window).scroll(function() {
       if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 100px
           $('#return-to-top').fadeIn(200);    // Fade in the arrow
@@ -82,12 +82,12 @@ $('a[href="#search"]').on('click', function(event) {
 
      /*=========================== quantity add  active ===========================*/
      $('.quantity-button').off('click').on('click', function () {
-    
+
         if ($(this).hasClass('quantity-add')) {
           var addValue = parseInt($(this).parent().find('input').val()) + 1;
               $(this).parent().find('input').val(addValue).trigger('change');
           }
-    
+
           if ($(this).hasClass('quantity-remove')) {
           var removeValue = parseInt($(this).parent().find('input').val()) - 1;
               if( removeValue == 0 ) {
@@ -95,26 +95,26 @@ $('a[href="#search"]').on('click', function(event) {
               }
               $(this).parent().find('input').val(removeValue).trigger('change');
           }
-    
+
         });
-  
+
 /*=========================== close quantity add  active ===========================*/
 
 
 /*=========================== modal video player  active ===========================*/
-  
+
     //modal video play
-    var $videoSrc;  
+    var $videoSrc;
     $('.video-btn').on('click',function() {
         $videoSrc = $(this).data( "src" );
     });
-  
+
     $('#myModalVideo').on('shown.bs.modal', function (e) {
-        $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+        $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" );
     })
     $('#myModalVideo').on('hide.bs.modal', function (e) {
-        $("#video").attr('src',$videoSrc); 
-    }) 
+        $("#video").attr('src',$videoSrc);
+    })
   /*=========================== close modal video player  active ===========================*/
 
    /*=========================== Testimonial active ===========================*/
@@ -177,7 +177,7 @@ $('a[href="#search"]').on('click', function(event) {
       }
     ]
     });
-  
+
 /*=========================== close portfolio slider ===========================*/
 
 /*=========================== partner slider ===========================*/
@@ -247,15 +247,15 @@ $('.partner-logo-slider').slick({
     }
   ]
   });
-  
+
   $(document).on('click', '.prevSlide', function(){
     $('.portfolio-item-slider').slick('slickPrev');
   });
-  
+
   $(document).on('click', '.nextSlide', function(){
     $('.portfolio-item-slider').slick('slickNext');
   });
-    
+
   $(document).on('click', '.filter-option-portfolio li a', function(){
       $('.filter-option-portfolio li a').removeClass('active');
         $(this).addClass('active');
@@ -273,7 +273,7 @@ $('.partner-logo-slider').slick({
 
           $('.portfolio-item-slider').slick('slickFilter', '.slide-shown');
         }
-    
+
         else{
           $('.portfolio-item-slider li').each(function(){
             $(this).removeClass('slide-shown');
@@ -313,7 +313,7 @@ $('.partner-logo-slider').slick({
       }
     ]
     });
-  
+
 /*=========================== close portfolio slider ===========================*/
 
 /*=========================== similar slider ===========================*/
@@ -413,7 +413,7 @@ $('.product-main-image-slider').slick({
   verticalSwiping:true,
   focusOnSelect: true,
 });
-$('.product-navigation-slider').slick({  
+$('.product-navigation-slider').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
   asNavFor: '.product-main-image-slider',
@@ -452,7 +452,7 @@ $('.product-navigation-slider').slick({
       }
     }
   ]
-  
+
 });
 /*=========================== close products details image active ===========================*/
 
@@ -494,7 +494,7 @@ $('.related-products-slider').slick({
 /*=========================== close similar slider ===========================*/
 
 /*=========================== price range ui active ===========================*/
-if(document.getElementById('slider-range') != null ){ 
+if(document.getElementById('slider-range') != null ){
   $( "#slider-range" ).slider({
     range: true,
     min: 0,
@@ -507,7 +507,7 @@ if(document.getElementById('slider-range') != null ){
   $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
     " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 }
-if(document.getElementById('slider-range2') != null ){ 
+if(document.getElementById('slider-range2') != null ){
   $( "#slider-range2" ).slider({
     range: true,
     min: 0,
@@ -522,7 +522,7 @@ if(document.getElementById('slider-range2') != null ){
 }
  /*===========================close price range ui active ===========================*/
 
- // ------------------------------- AOS Animation 
+ // ------------------------------- AOS Animation
         AOS.init({
           duration: 1000,
           mirror: false,
@@ -530,10 +530,21 @@ if(document.getElementById('slider-range2') != null ){
             var maxWidth = 1100;
             return window.innerWidth < maxWidth;
           }
-        
+
         });
-
-
-
 });
 
+// Your JavaScript code
+document.addEventListener('DOMContentLoaded', function() {
+    // Find the modal element
+    const modal = document.getElementById('exampleModal');
+
+    // Create a new Bootstrap Modal instance
+    const modalInstance = new bootstrap.Modal(modal);
+
+    // Show the modal when the page loads
+    modalInstance.show();
+  });
+
+
+  

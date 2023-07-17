@@ -26,7 +26,7 @@ class AdminBasicWebPage extends Controller
      */
     public function create()
     {
-        //
+         return view('admin.basic-plan-create');
     }
 
     /**
@@ -56,7 +56,7 @@ class AdminBasicWebPage extends Controller
             'image'=>$filename
         ]);
 
-        return redirect()->route('admin_home');
+        return redirect()->route('basic-page.index')->with('succes' , 'Data successfully Saved');
     }
 
     /**
@@ -78,7 +78,9 @@ class AdminBasicWebPage extends Controller
      */
     public function edit($id)
     {
-        //
+        $page = page::where('id' ,$id)->first();
+
+        return view('admin.basic-plan-edit' , compact('page'));
     }
 
     /**
@@ -90,7 +92,36 @@ class AdminBasicWebPage extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $page = page::where('id' ,$id)->first();
+
+        $request->validate([
+            'name'=>'required',
+            // 'image'=>'required'
+        ]);
+
+         // Update the name field
+          $page->name = $request->name;
+
+         // Handle the image upload if provided
+         if ($request->hasFile('image')) {
+             $image = $request->file('image');
+             $filename = uniqid() . '.' . $image->getClientOriginalExtension();
+             $image->move(public_path('page'), $filename);
+             if ($page->image) {
+                unlink(public_path('page\\' . $page->image));
+            }
+         }
+
+          // Save the updated record
+           $page->save();
+
+         $page->update([
+            'name'=>$request->name
+         ]);
+
+         return redirect()->route('basic-page.index')->with('succes' , 'Update Successfully');
+
+
     }
 
     /**
@@ -101,6 +132,10 @@ class AdminBasicWebPage extends Controller
      */
     public function destroy($id)
     {
-        //
+
+        $page = page::where('id' , $id)->first();
+        page::where('id' , $id)->delete();
+        return redirect()->route('basic-page.index')->with('succes' , 'Data is deleted Successfully');
+
     }
 }

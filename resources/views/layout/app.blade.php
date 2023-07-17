@@ -26,7 +26,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
-    <div class="se-pre-con"></div>
+    {{-- <div class="se-pre-con"></div> --}}
 
     <!-- main nav start -->
     <header class="header-style-1">

@@ -4,9 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InfoController;
 use App\Http\Controllers\BlogDetailsmController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\Basic\BasicPlanController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminBasicWebPage;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -55,6 +57,9 @@ Route::get('blog-full', function () {
     return view('blog-full');
 });
 
+// For Basic Plan
+Route::get('/basic-plan' , [BasicPlanController::class , 'index'])->name('basic-plan');
+
 
 // Send Info To Admin
 Route::post('send-info' , [InfoController::class , 'store'])->name('send-info');
@@ -67,11 +72,9 @@ Route::get('blog-details' , [BlogDetailsmController::class , 'index'])->name('bl
 Route::post('/store' ,[AppointmentController::class , 'store'])->name('store-appointment');
 
 // Admin
-
 Route::get('/admin/login',[AdminLoginController::class , 'index'])->name('admin_login');
 Route::post('/login-submit' , [AdminLoginController::class  , 'login_submit'])->name('admin_login_submit');
 Route::get('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin_logout');
-
 
 
 Route::middleware('admin:admin')->group(function () {
