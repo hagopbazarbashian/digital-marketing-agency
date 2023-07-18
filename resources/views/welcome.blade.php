@@ -359,8 +359,7 @@
 <!--pricing plan end-->
 <!-- Button to trigger the modal -->
 <button type="button" id="openButton" class="btn mod btn-primary">Open Modal</button>
-
-{{-- <!-- Modal -->
+<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -403,12 +402,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!--/.container-->
+                    </div>
                 </section>
             </div>
         </div>
     </div>
-</div> --}}
+</div>
 <!--fun fact start-->
 <div class="fun-fact-sec pt-120">
     <div class="container">

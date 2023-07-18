@@ -535,16 +535,66 @@ if(document.getElementById('slider-range2') != null ){
 });
 
 // Your JavaScript code
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Find the modal element
+//     const modal = document.getElementById('exampleModal');
+
+//     // Create a new Bootstrap Modal instance
+//     const modalInstance = new bootstrap.Modal(modal);
+
+//     // Show the modal when the page loads
+//     modalInstance.hide();
+// });
+
 document.addEventListener('DOMContentLoaded', function() {
     // Find the modal element
     const modal = document.getElementById('exampleModal');
 
-    // Create a new Bootstrap Modal instance
-    const modalInstance = new bootstrap.Modal(modal);
+    // Check the screen size and show the modal only on mobile devices (less than medium breakpoint)
+    if (window.innerWidth < 768) {
+        // Create a new Bootstrap Modal instance
+        const modalInstance = new bootstrap.Modal(modal);
 
-    // Show the modal when the page loads
-    modalInstance.show();
-  });
+        // Show the modal
+        modalInstance.show();
+    }
+});
+
+
+
+$(document).ready(function() {
+    $('.mypage').click(function() {
+        const id = $('#id').val();
+        const style = $('#style').val();
+
+        // Get the CSRF token from the meta tag
+        const csrfToken = $('meta[name="csrf-token"]').attr('content');
+
+        // Send the data using Ajax
+        $.ajax({
+            type: 'POST',
+            url: '/store-data', // Replace with the appropriate route URL
+            data: {
+                id: id,
+                style: style
+                // Add other data fields as needed
+            },
+            headers: {
+                'X-CSRF-TOKEN': csrfToken // Include the CSRF token in the headers
+            },
+            success: function(data) {
+                // Handle the success response from the server
+                console.log(data.message); // Example: "Data stored successfully"
+            },
+            error: function(xhr, textStatus, error) {
+                // Handle the error response from the server
+                console.error(xhr.responseText);
+            }
+        });
+    });
+});
+
+
 
 
   

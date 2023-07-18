@@ -14,6 +14,7 @@
 
     <meta name="description" content="Ortencey Marketing Agency">
     <meta name="author" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Ortencey Marketing Agency</title>
 

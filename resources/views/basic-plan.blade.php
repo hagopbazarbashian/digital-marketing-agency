@@ -58,7 +58,7 @@
                                                 <span class="badge created">New</span>
                                                 {{-- <span class="badge off">20%</span> --}}
                                             </div>
-                                            <img class="prd" src="{{asset('/page'.$page->image)}}" alt="">
+                                            <img class="prd" src="{{asset('/page//'.$page->image)}}" alt="">
                                             <div class="reviews-btn">
                                                 <span>Reviews (18)</span>
                                                 <div class="d-flex reviews  justify-content-center">
@@ -70,11 +70,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cont">
-                                            <h3><a href="shop-details.html">{{$page->name}}</a></h3>
-                                            <p>$2000</p>
-                                            <button type="button" class="add_cart"><i class="bx bx-shopping-bag"></i> Add to Cart</button>
-                                        </div>
+                                            <div class="cont">
+                                                <h3><a href="#">{{$page->name}}</a></h3>
+                                                <p>Free</p>
+                                                <a href="#" class="mypage" id="{{ $page->name }}" style="hhh"><button type="button" class="add_cart"><i class="fa fa-pencil-square-o"></i>Start Now</button></a>
+                                            </div>
                                     </div><!--/.custom-product-wrap-->
                                 </div>
                                 @endforeach

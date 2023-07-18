@@ -59,7 +59,8 @@ Route::get('blog-full', function () {
 
 // For Basic Plan
 Route::get('/basic-plan' , [BasicPlanController::class , 'index'])->name('basic-plan');
-
+// Ajax
+Route::post('/store-data', [BasicPlanController::class , 'store'])->name('store.data');
 
 // Send Info To Admin
 Route::post('send-info' , [InfoController::class , 'store'])->name('send-info');

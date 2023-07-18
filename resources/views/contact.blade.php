@@ -35,7 +35,7 @@
                         <div class="col-lg-6">
                             <div class="left-content-con-pg">
                                 <div class="sec-title">
-                                    <h1>Contact With Us</h1>
+                                    <h1>Contact With Us Build a Free Website or Online Store ...</h1>
                                     <p>Send us a message and we' ll respond as soon as possible</p>
                                 </div>
                                 <form action="{{ route('contact') }}"  method="post">
@@ -74,7 +74,7 @@
                                         <div class="single-con-dts">
                                             <div class="icon"><i class='bx bxs-phone' ></i></div>
                                             <h2>Phone</h2>
-                                            <a href="tel:98473847383">+(375)55 4460 12</a>
+                                            <a href="tel:98473847383">+(375)55 4460 61</a>
                                             <a href="tel:5466546744">+(1)514 781 2513</a>
                                         </div><!--/.single-con-dts-->
                                     </div>
