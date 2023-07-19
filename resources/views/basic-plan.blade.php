@@ -70,11 +70,16 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <form action="{{route('store.data')}}" method="post">
+                                            @csrf
                                             <div class="cont">
+                                                <input type="hidden" name="name" value="{{$page->name}}">
+                                                <input type="hidden" name="id" value="{{$page->id}}">
                                                 <h3><a href="#">{{$page->name}}</a></h3>
                                                 <p>Free</p>
-                                                <a href="#" class="mypage" id="{{ $page->name }}" style="hhh"><button type="button" class="add_cart"><i class="fa fa-pencil-square-o"></i>Start Now</button></a>
+                                                <button type="submit" class="add_cart"><i class="fa fa-pencil-square-o"></i>Start Now</button>
                                             </div>
+                                        </form>
                                     </div><!--/.custom-product-wrap-->
                                 </div>
                                 @endforeach

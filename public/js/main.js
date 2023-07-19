@@ -562,39 +562,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-$(document).ready(function() {
-    $('.mypage').click(function() {
-        const id = $('#id').val();
-        const style = $('#style').val();
-
-        // Get the CSRF token from the meta tag
-        const csrfToken = $('meta[name="csrf-token"]').attr('content');
-
-        // Send the data using Ajax
-        $.ajax({
-            type: 'POST',
-            url: '/store-data', // Replace with the appropriate route URL
-            data: {
-                id: id,
-                style: style
-                // Add other data fields as needed
-            },
-            headers: {
-                'X-CSRF-TOKEN': csrfToken // Include the CSRF token in the headers
-            },
-            success: function(data) {
-                // Handle the success response from the server
-                console.log(data.message); // Example: "Data stored successfully"
-            },
-            error: function(xhr, textStatus, error) {
-                // Handle the error response from the server
-                console.error(xhr.responseText);
-            }
-        });
-    });
-});
 
 
-
-
-  

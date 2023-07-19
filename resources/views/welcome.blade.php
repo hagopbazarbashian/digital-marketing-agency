@@ -370,8 +370,8 @@
                         <div class="row g-0">
                             <div class="col-12">
                                 <div class="sec-title text-center mb-50">
-                                    <h3><img src="img/icons/title-icon-infinity.svg" alt=""> Our Pricing</h3>
-                                    <h2 class="tag1">Our Best Pricing Plan</h2>
+                                    <h3><img src="img/icons/title-icon-infinity.svg" alt="">Our Pricing</h3>
+                                    <h2 class="tag1">Create Your Own Website for Free</h2>
                                 </div>
                             </div>
                             <div class="col-12">
