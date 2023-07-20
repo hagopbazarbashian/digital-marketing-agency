@@ -9167,5 +9167,18 @@ Close Contact page style
 .mod{
     display: none;
 }
+@media (max-width: 767px){
+    .text-1{
+        font-size: 20px;
+        line-height: 46px;
+        display: flex;
+        justify-content: space-around;
+    }
 
+
+}
+.text-1{
+    display: flex;
+    justify-content: flex-end;
+}
 

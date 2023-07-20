@@ -42,18 +42,18 @@ class AdminBasicWebPage extends Controller
             'image'=>'required'
         ]);
 
-          // Get the uploaded file
-        $image = $request->file('image');
+        //   // Get the uploaded file
+        // $image = $request->file('image');
 
-        // Generate a unique file name for the image
-        $filename = uniqid() . '.' . $image->getClientOriginalExtension();
+        // // Generate a unique file name for the image
+        // $filename = uniqid() . '.' . $image->getClientOriginalExtension();
 
-        // Move the image to the public/images directory (you can change the folder name)
-        $image->move(public_path('page'), $filename);
+        // // Move the image to the public/images directory (you can change the folder name)
+        // $image->move(public_path('page'), $filename);
 
         page::create([
             'name'=>$request->name,
-            'image'=>$filename
+            'image'=>$request->image
         ]);
 
         return redirect()->route('basic-page.index')->with('succes' , 'Data successfully Saved');
