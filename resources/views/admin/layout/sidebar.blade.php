@@ -14,6 +14,7 @@
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-hand-point-right"></i><span>Page Settings</span></a>
                 <ul class="dropdown-menu">
                     <li class="{{ request()->routeIs('basic-page.index') ? 'active' : '' }}"><a class="nav-link" href="{{route('basic-page.index')}}"><i class="fas fa-angle-right"></i>For Basic Plan</a></li>
+                    <li class="{{ request()->routeIs('single-basic-plan.index') ? 'active' : '' }}"><a class="nav-link" href="{{route('single-basic-plan.index')}}"><i class="fas fa-angle-right"></i>Single Basic Page</a></li>
                 </ul>
             </li>
             <li class="{{ request()->routeIs('admin.create') ? 'active' : '' }}"><a class="nav-link" href="{{route('admin.create')}}" data-bs-toggle="tooltip" data-bs-placement="right" title="Why Choose Items"><i class="fas fa-hand-point-right"></i> <span>Contact User</span></a></li>

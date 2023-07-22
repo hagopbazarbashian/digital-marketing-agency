@@ -8,6 +8,7 @@ use App\Http\Controllers\Basic\BasicPlanController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminBasicWebPage;
+use App\Http\Controllers\Admin\AdminSingleBasicPage;
 
 
 /*
@@ -59,6 +60,8 @@ Route::get('blog-full', function () {
 
 // For Basic Plan
 Route::get('/basic-plan' , [BasicPlanController::class , 'index'])->name('basic-plan');
+// Single Basic Plan
+Route::get('/single-basic-plan/{id}' , [BasicPlanController::class , 'singlepage'])->name('single-basic-plan');
 // Ajax
 Route::post('/store-data', [BasicPlanController::class , 'store'])->name('store.data');
 
@@ -81,4 +84,6 @@ Route::get('/admin/logout', [AdminLoginController::class, 'logout'])->name('admi
 Route::middleware('admin:admin')->group(function () {
     Route::resource('admin' , AdminHomeController::class);
     Route::resource('basic-page' , AdminBasicWebPage::class);
+    // Single Basic page
+    Route::resource('single-basic-plan' , AdminSingleBasicPage::class);
 });

@@ -9185,3 +9185,17 @@ image-container {
     border: 2px solid #000; /* Add a 2px black border around the image */
     border-radius: 8px; /* Optional: Add rounded corners to the border */
   }
+
+  .col-lg-9{
+    margin: 51px 0 0 0;
+
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    flex-direction: row;
+    justify-content: space-around;
+  }

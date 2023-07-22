@@ -41,19 +41,13 @@ class AdminBasicWebPage extends Controller
             'name'=>'required',
             'image'=>'required'
         ]);
-
-        //   // Get the uploaded file
-        // $image = $request->file('image');
-
-        // // Generate a unique file name for the image
-        // $filename = uniqid() . '.' . $image->getClientOriginalExtension();
-
-        // // Move the image to the public/images directory (you can change the folder name)
-        // $image->move(public_path('page'), $filename);
+        $image = $request->file('image');
+        $filename = uniqid() . '.' . $image->getClientOriginalExtension();
+        $image->move(public_path('page'), $filename);
 
         page::create([
             'name'=>$request->name,
-            'image'=>$request->image
+            'image'=>$filename
         ]);
 
         return redirect()->route('basic-page.index')->with('succes' , 'Data successfully Saved');
@@ -107,16 +101,14 @@ class AdminBasicWebPage extends Controller
              $image = $request->file('image');
              $filename = uniqid() . '.' . $image->getClientOriginalExtension();
              $image->move(public_path('page'), $filename);
-             if ($page->image) {
-                unlink(public_path('page\\' . $page->image));
-            }
          }
 
           // Save the updated record
            $page->save();
 
          $page->update([
-            'name'=>$request->name
+            'name'=>$request->name,
+            'image'=>$filename
          ]);
 
          return redirect()->route('basic-page.index')->with('succes' , 'Update Successfully');
