@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Info;
 use App\Models\contact;
+use Illuminate\Support\Facades\Mail;
 
 class InfoController extends Controller
 {
@@ -39,14 +40,16 @@ class InfoController extends Controller
 
         contact::create([
             'name' => $request->name,
-            'last' => $request->last, 
+            'last' => $request->last,
             'email'=> $request->email,
             'number'=>$request->number,
             'message'=>$request->message
         ]);
 
+        Mail::to($appointment->email)->send(new AppointmentEmail());
+
         return  redirect()->back()->with('succes' , 'Succesfully send your message to the team');
     }
-      
+
 }
 

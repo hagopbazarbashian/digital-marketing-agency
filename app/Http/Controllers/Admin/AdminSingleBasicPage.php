@@ -74,7 +74,9 @@ class AdminSingleBasicPage extends Controller
      */
     public function edit($id)
     {
-        //
+       $pages = page::get();
+       $singlebasicpage = singlebasicpage::where('id' , $id)->first();
+       return view('admin.single-basic-plan-edit',compact('singlebasicpage','pages'));
     }
 
     /**
@@ -86,7 +88,19 @@ class AdminSingleBasicPage extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $singlebasicpage = singlebasicpage::where('id' , $id)->first();
+        $request->validate([
+            'name'=>'required',
+            'icon'=>'required'
+        ]);
+        $singlebasicpage->update([
+            'page_id'=>$request->page,
+            'name'=>$request->name,
+            'icon'=>$request->icon
+        ]);
+
+        return redirect()->route('single-basic-plan.index')->with('succes' , 'Update Successfully');
+
     }
 
     /**
@@ -97,6 +111,8 @@ class AdminSingleBasicPage extends Controller
      */
     public function destroy($id)
     {
-        //
+        $singlebasicpage = singlebasicpage::where('id' , $id)->first();
+        singlebasicpage::where('id' , $id)->delete();
+        return redirect()->route('single-basic-plan.index')->with('succes' , 'Data is deleted Successfully');
     }
 }

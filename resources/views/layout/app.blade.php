@@ -43,7 +43,7 @@
                                     <a href="#"><i class='bx bxs-phone'></i> +88 ( 5548 ) 6548</a>
                                 </li> --}}
                                 <li>
-                                    <a href="mailto:hagopbazarbasian@gmail.com"><i class='bx bxs-envelope'></i>hagopbazarbasian@gmail.com</a>
+                                    <a href="mailto:support@developsmart.xyz"><i class='bx bxs-envelope'></i>support@developsmart.xyz</a>
                                 </li>
                             </ul>
                         </div><!--/.left-content-top-->
@@ -302,7 +302,7 @@
                                         </li> --}}
                                         <li>
                                             <i class='bx bxs-envelope' ></i>
-                                            <a href="mailto:hagopbazarbasian@gmail.com">hagopbazarbasian@gmail.com</a>
+                                            <a href="mailto:support@developsmart.xyz">support@developsmart.xyz</a>
                                         </li>
                                         <li>
                                             <i class='bx bxs-map' ></i>

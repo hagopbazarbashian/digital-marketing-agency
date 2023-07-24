@@ -97,7 +97,7 @@
                         Excellence Services</h1>
                     <p>The 3 golden rules professional Digital Marketing Agency don’t
                         want you to know about.</p>
-                    <a href="#" class="btn btn-default">Discover More</a>
+                    <a href="{{url('contact')}}" class="btn btn-default">Discover More</a>
                 </div><!--/.left-content-hero-->
             </div>
             <div class="col-lg-6">
@@ -264,7 +264,7 @@
             <div class="col-md-6">
                 <div class="right-img-choose">
                     <img src="img/choose-img25.jpg" alt="">
-                    <div class="exp"><span>7</span> Years Experience</div>
+                    <div class="exp"><span>4</span> Years Experience</div>
                 </div><!--/.right-img-choose-->
             </div>
         </div>
@@ -296,11 +296,11 @@
                             </div>
                             <div class="plan-body">
                                 <ul class="list-icons d-flex flex-column align-items-center">
-                                    <li>Free Consultations</li>
-                                    <li>Business Planning</li>
-                                    <li>Investment Process</li>
+                                    <li>250 MB Storage</li>
+                                    <li>250 MB Bandwidth</li>
                                     <li>Basic web page</li>
-                                    <li class="dis">Online Support</li>
+                                    <li>Subdomain</li>
+                                    <li>Online Support</li>
                                     <li class="dis">Unlimited Updates</li>
                                 </ul>
                                 <a href="{{route('basic-plan')}}" class="btn">Choose Plan</a>
@@ -314,22 +314,23 @@
                             </div>
                             <div class="plan-hdr">
                                 <h2>Gold Plan</h2>
-                                <h1><sup>$</sup>30<small>Per Month</small></h1>
+                                <h1><sup>$</sup>6<small>Per Month</small></h1>
                             </div>
                             <div class="plan-body">
                                 <ul class="list-icons d-flex flex-column align-items-center">
-                                    <li>Free Consultations</li>
-                                    <li>Business Planning</li>
-                                    <li>Investment Process</li>
-                                    <li class="dis">Market Research</li>
-                                    <li class="dis">Online Support</li>
+                                    <li>Free Domain for 1 year</li>
+                                    <li>3GB storage</li>
+                                    <li>3GB bandwidth</li>
+                                    <li>Connect Your Domain</li>
+                                    <li>Store</li>
                                     <li>Unlimited Updates</li>
+                                    <li>Online Support</li>
                                 </ul>
                                 <a href="{{ url('contact') }}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
                     </div>
-                    <div class="col-md-6 col-xl-4">
+                    {{-- <div class="col-md-6 col-xl-4">
                         <div class="single-plan-area" data-aos="fade-up" data-aos-delay="500">
                             <div class="icons">
                                 <img src="img/icons/plan3.svg" alt="">
@@ -350,7 +351,7 @@
                                 <a href="{{ url('contact') }}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -559,275 +560,8 @@
     </div>
 </div>
 
-<!--team area start-->
-<section class="team-area-sec px-120">
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-12">
-                <div class="sec-title text-center">
-                    <h3><img src="img/icons/title-icon-infinity.svg" alt=""> Team Member</h3>
-                    <h2 class="tag1">Creative Team Member</h2>
-                </div>
-            </div>
-            <div class="col-12 mt-50">
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-3">
-                        <div class="team-member-inner" data-aos="flip-left" data-aos-delay="100">
-                            <div class="imgs">
-                                <img src="img/team100.jpg" alt="">
-                            </div>
-                            <div class="cont">
-                                <div class="name">
-                                    <h2>Robert Sions</h2>
-                                    <p>Business Consultant</p>
-                                </div>
-                                <div class="socials">
-                                    <ul>
-                                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!--/.team-member-inner-->
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="team-member-inner" data-aos="flip-left" data-aos-delay="300">
-                            <div class="imgs">
-                                <img src="img/team101.jpg" alt="">
-                            </div>
-                            <div class="cont">
-                                <div class="name">
-                                    <h2>Ross Bing</h2>
-                                    <p>App Developer</p>
-                                </div>
-                                <div class="socials">
-                                    <ul>
-                                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!--/.team-member-inner-->
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="team-member-inner" data-aos="flip-left" data-aos-delay="500">
-                            <div class="imgs">
-                                <img src="img/team102.jpg" alt="">
-                            </div>
-                            <div class="cont">
-                                <div class="name">
-                                    <h2>Karikok Jahan</h2>
-                                    <p>Executive Manager</p>
-                                </div>
-                                <div class="socials">
-                                    <ul>
-                                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!--/.team-member-inner-->
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="team-member-inner" data-aos="flip-left" data-aos-delay="700">
-                            <div class="imgs">
-                                <img src="img/team103.jpg" alt="">
-                            </div>
-                            <div class="cont">
-                                <div class="name">
-                                    <h2>Dickerson MH</h2>
-                                    <p>Agency Analysis</p>
-                                </div>
-                                <div class="socials">
-                                    <ul>
-                                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div><!--/.team-member-inner-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--/.container-->
-</section>
-<!--team area end-->
 
-<!--testimonial area start-->
-<section class="testimonial-sec px-120">
-    <div class="container">
-        <div class="row align-items-center align-items-lg-start gy-5">
 
-            <div class="col-md-7 col-lg-6 order-md-2">
-                <div class="right-content-testimonial">
-                    <div class="sec-title mb-50">
-                        <h3><img src="img/icons/title-icon-infinity.svg" alt="">Testimonial</h3>
-                        <h1>What Our Client Say</h1>
-                    </div>
-                    <div class="testimonial-slider-slick">
-                        <div class="single">
-                            <div class="feedback-inner-single">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="quote">
-                                        <i class='bx bxs-quote-left' ></i>
-                                    </div>
-                                    <div class="ratings d-flex">
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                    </div>
-                                </div>
-                                <p>Working with Ortencey has been a game-changer for our business. Their social media expertise has helped us increase our online following, generate more leads, and ultimately, grow our revenue.</p>
-                                <h2>Kristin Waon</h2>
-                                <h5>Web Designer</h5>
-                            </div><!--/.feedback-inner-single-->
-                        </div>
-                        <div class="single">
-                            <div class="feedback-inner-single">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="quote">
-                                        <i class='bx bxs-quote-left' ></i>
-                                    </div>
-                                    <div class="ratings d-flex">
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                    </div>
-                                </div>
-                                <p>We were hesitant to invest in social media marketing at first, but Ortencey has completely exceeded our expectations. Their strategic approach and data-driven insights have helped us reach new customers and achieve our business goals.</p>
-                                <h2>John Waon</h2>
-                                <h5>App Designer</h5>
-                            </div><!--/.feedback-inner-single-->
-                        </div>
-                        <div class="single">
-                            <div class="feedback-inner-single">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="quote">
-                                        <i class='bx bxs-quote-left' ></i>
-                                    </div>
-                                    <div class="ratings d-flex">
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                    </div>
-                                </div>
-                                <p>At Ortencey, we're committed to helping our clients succeed on social media. Contact us today to learn more about our services and how we can help your business grow.</p>
-                                <h2>Kim dude</h2>
-                                <h5>Web Developer</h5>
-                            </div><!--/.feedback-inner-single-->
-                        </div>
-                        <div class="single">
-                            <div class="feedback-inner-single">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="quote">
-                                        <i class='bx bxs-quote-left' ></i>
-                                    </div>
-                                    <div class="ratings d-flex">
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                    </div>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum availa the majority have suffered alteration in some form by injecte our, or rando word which don't look even slightly a believable. If you are going to use a passage of Lorem Ipsum, you need sure there isn't anything embarrassing.</p>
-                                <h2>Mafia x.</h2>
-                                <h5>Gang</h5>
-                            </div><!--/.feedback-inner-single-->
-                        </div>
-                        <div class="single">
-                            <div class="feedback-inner-single">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="quote">
-                                        <i class='bx bxs-quote-left' ></i>
-                                    </div>
-                                    <div class="ratings d-flex">
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                    </div>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum availa the majority have suffered alteration in some form by injecte our, or rando word which don't look even slightly a believable. If you are going to use a passage of Lorem Ipsum, you need sure there isn't anything embarrassing.</p>
-                                <h2>Sufi star</h2>
-                                <h5>Producer</h5>
-                            </div><!--/.feedback-inner-single-->
-                        </div>
-                        <div class="single">
-                            <div class="feedback-inner-single">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="quote">
-                                        <i class='bx bxs-quote-left' ></i>
-                                    </div>
-                                    <div class="ratings d-flex">
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                    </div>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum availa the majority have suffered alteration in some form by injecte our, or rando word which don't look even slightly a believable. If you are going to use a passage of Lorem Ipsum, you need sure there isn't anything embarrassing.</p>
-                                <h2>Kristin Waon</h2>
-                                <h5>Web Designer</h5>
-                            </div><!--/.feedback-inner-single-->
-                        </div>
-                        <div class="single">
-                            <div class="feedback-inner-single">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="quote">
-                                        <i class='bx bxs-quote-left' ></i>
-                                    </div>
-                                    <div class="ratings d-flex">
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                        <i class='bx bxs-star' ></i>
-                                    </div>
-                                </div>
-                                <p>There are many variations of passages of Lorem Ipsum availa the majority have suffered alteration in some form by injecte our, or rando word which don't look even slightly a believable. If you are going to use a passage of Lorem Ipsum, you need sure there isn't anything embarrassing.</p>
-                                <h2>Kristin Waon</h2>
-                                <h5>Web Designer</h5>
-                            </div><!--/.feedback-inner-single-->
-                        </div>
-                    </div>
-                    <div class="custom-paging-testi d-flex justify-content-center flex-column"></div>
-                </div><!--/.right-content-testimonial-->
-            </div>
-            <div class="col-md-5 col-lg-6 order-md-1">
-                <div class="left-client-images-tbs">
-                    <div class="action-hr">
-                        <a href="#" class="dts1" data-slide="1"><img src="img/testi200.jpg" alt=""></a>
-                        <a href="#" class="dts2" data-slide="2"><img src="img/testi201.png" alt=""></a>
-                        <a href="#" class="dts3" data-slide="3"><img src="img/testi203.jpg" alt=""></a>
-                        <a href="#" class="dts4" data-slide="4"><img src="img/testi204.jpg" alt=""></a>
-                        <a href="#" class="dts5" data-slide="5"><img src="img/testi205.jpg" alt=""></a>
-                        <a href="#" class="dts6" data-slide="6"><img src="img/testi206.jpg" alt=""></a>
-                        <a href="#" class="dts7" data-slide="7"><img src="img/testi207.jpg" alt=""></a>
-                    </div>
-                </div><!--/.left-client-images-tbs-->
-            </div>
-        </div>
-    </div><!--/.container-->
-</section>
-<!--testimonial area end-->
 
 <!--promo text start-->
 <div class="promo-text-area">
@@ -857,78 +591,5 @@
     data-aos-anchor-placement="top-bottom" data-aos-delay="1000"></div>
 </div>
 <!--promo text end-->
-
-<!--blog area start-->
-<section class="blog-sec px-120">
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-12">
-                <div class="sec-title text-center">
-                    <h3><img src="img/icons/title-icon-infinity.svg" alt="">Our Blog</h3>
-                    <h2 class="tag1">Latest Blogs & Articles</h2>
-                </div>
-            </div>
-            <div class="col-12 mt-50">
-                <div class="row justify-content-center g-4 ">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-blog-inner" data-aos="fade-in" data-aos-delay="100">
-                            <div class="imgs">
-                                <img src="img/blog100.jpg" alt="">
-                                <span class="date">09 Dec 2022</span>
-                                <span class="cat">Digital Agency</span>
-                                <a href="{{ route('blog-details') }}" class="single-links">hidden link</a>
-                            </div>
-                            <div class="conts">
-                                <ul class="meta">
-                                    <li><img src="img/icons/user.svg" alt=""><span>by Admin</span></li>
-                                    <li><img src="img/icons/messages.svg" alt=""> <span>25</span></li>
-                                    <li><img src="img/icons/eye.svg" alt=""> <span>120 Views</span></li>
-                                </ul>
-                                <h2><a href="{{ route('blog-details') }}">Successful business partner have a meeting and discussing</a></h2>
-                            </div>
-                        </div><!--/.single-blog-inner-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-blog-inner" data-aos="fade-in" data-aos-delay="300">
-                            <div class="imgs">
-                                <img src="img/blog101.jpg" alt="">
-                                <span class="date">09 Dec 2022</span>
-                                <span class="cat">Marketing Agency</span>
-                                <a href="{{ route('blog-details') }}" class="single-links">hidden link</a>
-                            </div>
-                            <div class="conts">
-                                <ul class="meta">
-                                    <li><img src="img/icons/user.svg" alt=""><span>by Admin</span></li>
-                                    <li><img src="img/icons/messages.svg" alt=""> <span>22</span></li>
-                                    <li><img src="img/icons/eye.svg" alt=""> <span>2120 Views</span></li>
-                                </ul>
-                                <h2><a href="{{ route('blog-details') }}">Motivated colleagues celebrating corporate success together</a></h2>
-                            </div>
-                        </div><!--/.single-blog-inner-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="single-blog-inner" data-aos="fade-in" data-aos-delay="500">
-                            <div class="imgs">
-                                <img src="img/blog102.jpg" alt="">
-                                <span class="date">09 Nov 2022</span>
-                                <span class="cat">Digital Connect</span>
-                                <a href="{{ route('blog-details') }}" class="single-links">hidden link</a>
-                            </div>
-                            <div class="conts">
-                                <ul class="meta">
-                                    <li><img src="img/icons/user.svg" alt=""><span>by Admin</span></li>
-                                    <li><img src="img/icons/messages.svg" alt=""> <span>22</span></li>
-                                    <li><img src="img/icons/eye.svg" alt=""> <span>120 Views</span></li>
-                                </ul>
-                                <h2><a href="{{ route('blog-details') }}">Man using a tablet to a work and connect with others</a></h2>
-                            </div>
-                        </div><!--/.single-blog-inner-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--/.container-->
-</section>
-<!--blog area end-->
 @endsection
 

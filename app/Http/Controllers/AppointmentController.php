@@ -24,7 +24,7 @@ class AppointmentController extends Controller
             'body'=>$request->body
         ]);
 
-        // Mail::to($appointment->email)->send(new AppointmentEmail());
+        Mail::to($appointment->email)->send(new AppointmentEmail());
 
         return redirect()->back()->with('success' , 'Message successfully sent');
 
