@@ -151,7 +151,7 @@
                         <div class="icon">
                             <img src="img/icons/service-icon3.svg" alt="">
                         </div>
-                        <div class="cont">
+                        <div class="cont">   
                             <h2>Digital Marketing</h2>
                             <p>we understand that effective digital marketing is about more than just posting content – it's about crafting compelling narratives, leveraging data-driven insights, and creating connections that convert. Our team of experienced digital marketers is dedicated to delivering tailored strategies that help your brand thrive in the digital realm.</p>
                         </div>
@@ -160,7 +160,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="single-services-ort-v2" data-aos="fade-in" data-aos-delay="700">
                         <div class="icon">
-                            <img src="img/service-icon4.svg" alt="">
+                            <img src="img/icons/service-icon4.svg" alt="">
                         </div>
                         <div class="cont">
                             <h2>App Design</h2>
