@@ -1,5 +1,12 @@
 @extends('layout.app')
 @section('main_content')
+<style>
+    @media (max-width: 767px){
+        .pt-120 {
+        padding-top: 0px;
+        }
+    }
+</style>
  <!--slidercart canvas-->
  <div class="offcanvas offcanvas-end slide_cart_ortency" tabindex="-1" id="ortencySlideCartCanvas" aria-labelledby="ortencySlideCartCanvas">
     <div class="offcanvas-header">
@@ -151,7 +158,7 @@
                         <div class="icon">
                             <img src="img/icons/service-icon3.svg" alt="">
                         </div>
-                        <div class="cont">   
+                        <div class="cont">
                             <h2>Digital Marketing</h2>
                             <p>we understand that effective digital marketing is about more than just posting content – it's about crafting compelling narratives, leveraging data-driven insights, and creating connections that convert. Our team of experienced digital marketers is dedicated to delivering tailored strategies that help your brand thrive in the digital realm.</p>
                         </div>
@@ -593,6 +600,11 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
+             <!-- Modal Header -->
+             <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Body -->
             <!-- Modal Body -->
             <div class="modal-body">
                 <section class="pricing-plan-sec pt-120">
