@@ -198,7 +198,7 @@
                             <div class="hidden-cont">
                                 <div class="d-flex justify-content-between">
                                     <div class="name">
-                                        <h3> Crypto Wallets.</h3>
+                                        <h3>Crypto Wallets.</h3>
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">

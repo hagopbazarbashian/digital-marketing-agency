@@ -1,11 +1,11 @@
 @extends('layout.app')
 @section('main_content')
-<!--slidercart canvas-->
-<div class="offcanvas offcanvas-end slide_cart_ortency" tabindex="-1" id="ortencySlideCartCanvas" aria-labelledby="ortencySlideCartCanvas">
+ <!--slidercart canvas-->
+ <div class="offcanvas offcanvas-end slide_cart_ortency" tabindex="-1" id="ortencySlideCartCanvas" aria-labelledby="ortencySlideCartCanvas">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title">Shopping Cart <span class="badge">4</span></h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
+      </div>
     <div class="offcanvas-body">
         <div class="ortency-shopping-cart-slide">
             <div class="single-items-cart d-flex align-items-center">
@@ -87,190 +87,441 @@
 </div>
 <!--slidercart canvas-->
 <!--hero section start-->
-<section class="banner-area-wrap">
+<section class="banner-area-wrap-v2">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <div class="left-content-hero">
-                    <h5>Your Trusted Ortencey Agency</h5>
-                    <h1>Our Digital Agency With
-                        Excellence Services</h1>
+                <div class="left-content-hero-v2">
+                    <h5>Get Started With Ortencey</h5>
+                    <h1>We Are The Best Digital <strong>Marketing</strong> Agency.</h1>
                     <p>The 3 golden rules professional Digital Marketing Agency don’t
                         want you to know about.</p>
-                    <a href="{{url('contact')}}" class="btn btn-default">Discover More</a>
+                    <div class="btn-groups">
+                        <a href="{{ url('contact') }}" class="btn btn-default">Discover More</a>
+                        <a href="{{ url('contact') }}" class="btn btn-get">Get Started</a>
+
+                    </div>
                 </div><!--/.left-content-hero-->
             </div>
             <div class="col-lg-6">
-                <div class="right-content-hero">
+                <div class="right-content-herov2">
                     <div class="imgs">
-                        <div class="inner">
-                            <img src="img/digital-marketing-2.jpg.optimal.jpg" alt="">
-                        </div>
+                        <img src="{{asset('img/hero.png')}}" data-aos="fade-up" alt="">
                     </div>
                 </div><!--/.right-content-hero-->
             </div>
         </div>
     </div><!--/.container-->
     <span class="banner-frame-one"></span>
-    <span class="banner-frame-two"></span>
+    <span class="banner-frame-two v2"></span>
     <span class="banner-frame-three"></span>
     <span class="banner-frame-four"></span>
-    <div class="shape-top-left" data-aos="fade-down" data-aos-delay="500"></div>
-    <div class="shape-bottom-left" data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom" data-aos-delay="1000"></div>
-    <div class="shape-bottom-right" data-aos="fade-left"
-    data-aos-anchor-placement="top-bottom" data-aos-delay="1500"></div>
+
 </section>
 <!--hero section end-->
-
-<!--about ortency start-->
-<section class="about-ortency-v1 pt-120">
-    <div class="container">
-        <div class="row gy-5 align-items-center">
-            <div class="col-md-6">
-                <div class="left-images-about">
-                    <div class="inner">
-                        <img src="img/about-11.png" data-aos="fade-down" class="img1" alt="">
-                        <img src="img/1614360598755.jpg" class="img2" alt="">
-                        <img src="img/about-12.png" data-aos="flip-left" data-aos-delay="800" class="img3" alt="">
-                    </div>
-                </div><!--/.left-images-about-->
+<section class="two-section-for-bg">
+    <!--our services area start-->
+    <div class="ortency-services-sec-v2 pt-120">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="single-services-ort-v2" data-aos="fade-in" data-aos-delay="100">
+                        <div class="icon">
+                            <img src="img/icons/service-icon1.svg" alt="">
+                        </div>
+                        <div class="cont">
+                            <h2>Graphics Design</h2>
+                            <p>We blend artistic ingenuity with strategic thinking. Every design element is meticulously crafted to align with your brand's core values and goals. From logos to marketing collaterals, we ensure that every piece of design contributes to your brand's narrative.</p>
+                        </div>
+                    </div><!--/.single-services-ort-v2-->
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single-services-ort-v2" data-aos="fade-in" data-aos-delay="300">
+                        <div class="icon">
+                            <img src="img/icons/service-icon2.svg" alt="">
+                        </div>
+                        <div class="cont">
+                            <h2>Web Developer</h2>
+                            <p>we recognize that a website is more than just a digital presence – it's a dynamic platform that can engage, inform, and convert visitors into loyal customers. Our team of skilled web developers is dedicated to crafting websites that not only look exceptional but also function flawlessly across devices and browsers.</p>
+                        </div>
+                    </div><!--/.single-services-ort-v2-->
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single-services-ort-v2" data-aos="fade-in" data-aos-delay="500">
+                        <div class="icon">
+                            <img src="img/icons/service-icon3.svg" alt="">
+                        </div>
+                        <div class="cont">
+                            <h2>Digital Marketing</h2>
+                            <p>we understand that effective digital marketing is about more than just posting content – it's about crafting compelling narratives, leveraging data-driven insights, and creating connections that convert. Our team of experienced digital marketers is dedicated to delivering tailored strategies that help your brand thrive in the digital realm.</p>
+                        </div>
+                    </div><!--/.single-services-ort-v2-->
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="single-services-ort-v2" data-aos="fade-in" data-aos-delay="700">
+                        <div class="icon">
+                            <img src="img/service-icon4.svg" alt="">
+                        </div>
+                        <div class="cont">
+                            <h2>App Design</h2>
+                            <p>we recognize that mobile apps have become an integral part of modern business strategies. Our team of experienced app designers combines creativity with technical expertise to craft apps that not only look great but also offer seamless experiences for users.</p>
+                        </div>
+                    </div><!--/.single-services-ort-v2-->
+                </div>
             </div>
-            <div class="col-md-6">
-                    <div class="sec-title">
-                        <h3><img src="img/icons/title-icon.svg" alt=""> About Our Company</h3>
-                        <h2 class="tag1">Best Digital Marketing Agency For People</h2>
-                    </div>
-                    <p style="margin-top: 27px;">here are many great digital marketing agencies out there, but the best one for you will depend on your specific needs and goals. It's important to look for an agency that has a strong track record of success, a team of experienced and skilled professionals, and a comprehensive range of digital marketing services that align with your objectives. Additionally, a great digital marketing agency will be able to provide personalized and tailored solutions that fit your budget and deliver measurable results. It's always a good idea to do your research, read reviews and testimonials, and schedule consultations with different agencies to find the one that is the best fit for you.</p>
-                    <ul class="list-icons d-flex flex-wrap align-items-start" style="margin-top: 27px;margin-bottom: 17px;">
-                        <li>Digital Strategy</li>
-                        <li>SEO Optimization</li>
-                        <li>Marketing</li>
-                        <li>First Working Process</li>
-                    </ul>
-                    <a href="#" class="btn btn-default">Read More</a>
-                </div><!--/.right-content-about-->
+        </div><!--/.container-->
+    </div>
+    <!--our services area end-->
+
+    <!--about ortency start-->
+    <div class="about-ortency-v1 px-120">
+        <div class="container">
+            <div class="row gy-5 align-items-center">
+                <div class="col-md-6">
+                    <div class="left-images-about-v2">
+                        <div class="inner">
+                            <img src="{{asset('img/about-img.png')}}" data-aos="fade-down" class="img1" alt="">
+                        </div>
+                    </div><!--/.left-images-about-->
+                </div>
+                <div class="col-md-6">
+                    <div class="right-content-about v2">
+                        <div class="sec-title  v2">
+                            <h3>About Our Company</h3>
+                            <h2 class="tag1">Learn How to Grow your Business in Days</h2>
+                        </div>
+                        <p>Welcome to Ortencey Digital Market Agency, your ultimate partner in achieving rapid business expansion. Are you ready to take your business to new heights in a matter of days? Our proven strategies and expert guidance will empower you to accelerate growth, maximize profits, and establish a lasting competitive edge.</p>
+                        <ul class="list-icons v2 d-flex flex-column align-items-start">
+                            <li>01. Best market Research Policy.</li>
+                            <li>02. 24/7 Days super Support.</li>
+                        </ul>
+                        <a href="{{ url('contact') }}" class="btn btn-default">Read More</a>
+                    </div><!--/.right-content-about-->
+                </div>
             </div>
         </div>
     </div>
+    <!--about ortency end-->
 </section>
-<!--about ortency end-->
 
-<!--our services start-->
-<div class="our-services-sec px-120">
+<!--our services area start-->
+<section class="our-services-v2 px-120">
     <div class="container">
-        <div class="row g-4 gy-4 justify-content-center">
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="single-services-dv" data-aos="fade-up" data-aos-delay="200">
-                    <div class="imgs">
-                        <div class="icon">
-                            <img src="{{ asset('img/icons/service-icon1.svg') }}" alt="">
-                        </div>
-                        <img src="img/service115.png" class="mn" alt="">
-                    </div>
-                    <div class="cont">
-                        <h2>WEB DESIGN</h2>
-                        {{-- <p>Contrary to popular belief, Lorem Ips is not simply random text. It has root in a piece of classical.</p> --}}
-                    </div>
-                </div><!--/.single-services-dv-->
+        <div class="row g-0">
+            <div class="col-12">
+                <div class="sec-title v2 text-center mb-50">
+                    <h3>Our Services</h3>
+                    <h2 class="tag1">Best Quality Services</h2>
+                </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="single-services-dv" data-aos="fade-up" data-aos-delay="400">
-                    <div class="imgs">
-                        <div class="icon">
-                            <img src="{{ asset('img/icons/service-icon2.svg') }}" alt="">
-                        </div>
-                        <img src="img/service216.png" class="mn" alt="">
+            <div class="col-12">
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="single-service-inner_v2" data-aos="fade-up">
+                            <div class="row g-3 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="imgs">
+                                        <img src="{{asset('img/services1.jpg')}}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-xl-6 ">
+                                    <div class="cont">
+                                        <h2>Search Engine Optimization</h2>
+                                        <p>At Ortencey Digital Market Agency, we understand that in the world of online business, visibility is everything. Our team of SEO experts possesses the knowledge, experience, and passion to propel your website to the forefront of search engines, ensuring your business is discovered by those who matter most.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-xl-2 text-center">
+                                    <a href="{{ url('contact') }}" class="btn style2">Read More</a>
+                                </div>
+                            </div>
+                        </div><!--/.single-service-inner_v2-->
                     </div>
-                    <div class="cont">
-                        <h2>Web Developer</h2>
-                        {{-- <p>Contrary to popular belief, Lorem Ips is not simply random text. It has root in a piece of classical.</p> --}}
+                    <div class="col-12">
+                        <div class="single-service-inner_v2" data-aos="fade-up">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="imgs">
+                                        <img src="{{asset('img/services2.jpg')}}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-xl-6 mx-auto">
+                                    <div class="cont">
+                                        <h2>Web Design & Development</h2>
+                                        <p>At Ortencey Digital Market Agency,, we understand that a website is more than just an online presence; it's a powerful tool for connecting with customers, conveying your brand story, and achieving your business objectives.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-xl-2 text-center">
+                                    <a href="{{ url('contact') }}" class="btn style2">Read More</a>
+                                </div>
+                            </div>
+                        </div><!--/.single-service-inner_v2-->
                     </div>
-                </div><!--/.single-services-dv-->
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="single-services-dv" data-aos="fade-up" data-aos-delay="600">
-                    <div class="imgs">
-                        <div class="icon">
-                            <img src="{{ asset('img/icons/service-icon3.svg') }}" alt="">
-                        </div>
-                        <img src="img/service317.png" class="mn" alt="">
+                    <div class="col-12">
+                        <div class="single-service-inner_v2" data-aos="fade-up">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="imgs">
+                                        <img src="{{asset('img/services3.jpg')}}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-xl-6 mx-auto">
+                                    <div class="cont">
+                                        <h2>Email and Content Marketing</h2>
+                                        <p>At Ortencey Digital Market Agency, we understand that meaningful communication is the foundation of strong customer relationships. Our expert team combines the art of storytelling with data-driven strategies to create campaigns that resonate and deliver results.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-xl-2 text-center">
+                                    <a href="{{ url('contact') }}" class="btn style2">Read More</a>
+                                </div>
+                            </div>
+                        </div><!--/.single-service-inner_v2-->
                     </div>
-                    <div class="cont">
-                        <h2>Text Corrector </h2>
-                        {{-- <p>A text corrector is a tool that helps identify and correct errors in written text, such as spelling mistakes, grammar errors, and punctuation errors.</p> --}}
+                    <div class="col-12">
+                        <div class="single-service-inner_v2" data-aos="fade-up">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-4">
+                                    <div class="imgs">
+                                        <img src="{{asset('img/services4.jpg')}}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-xl-6 mx-auto">
+                                    <div class="cont">
+                                        <h2>Social Media Network Marketing </h2>
+                                        <p>At Digital Market Agency, we understand that social media is more than just posts; it's a dynamic realm that demands attention, strategy, and creativity. Our team of experienced social media marketers is dedicated to delivering campaigns that not only resonate but also deliver tangible results.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-xl-2 text-center">
+                                    <a href="{{ url('contact') }}" class="btn style2">Read More</a>
+                                </div>
+                            </div>
+                        </div><!--/.single-service-inner_v2-->
                     </div>
-                </div><!--/.single-services-dv-->
-            </div>
-            <div class="col-md-6 col-lg-4 col-xl-3">
-                <div class="single-services-dv" data-aos="fade-up" data-aos-delay="800">
-                    <div class="imgs">
-                        <div class="icon">
-                            <img src="{{ asset('img/icons/service-icon4.svg') }}" alt="">
-                        </div>
-                        <img src="img/service418.png" class="mn" alt="">
-                    </div>
-                    <div class="cont">
-                        <h2>Mobile App</h2>
-                        {{-- <p>Contrary to popular belief, Lorem Ips is not simply random text. It has root in a piece of classical.</p> --}}
-                    </div>
-                </div><!--/.single-services-dv-->
+                </div>
             </div>
         </div>
     </div><!--/.container-->
-</div>
-<!--our services end-->
-
-<!--why choose us start-->
-<section class="why-choose-us px-120">
-    <div class="container">
-        <div class="row g-4 gy-5 align-items-center">
-            <div class="col-md-6">
-                <div class="left-content-choose">
-                    <div class="sec-title">
-                        <h3><img src="img/icons/title-icon-infinity.svg" alt="">Why Choose Ortencey</h3>
-                        <h2 class="tag1">Reason For Choosing Our Digital Agency</h2>
-                    </div>
-                    <p>Expertise: A good digital agency should have a team of professionals with a wide range of skills and expertise in various areas of digital marketing, such as SEO, PPC, social media marketing, content marketing, email marketing.</p>
-                    <div class="single-progress">
-                        <label class="d-flex justify-content-between">
-                            <span>Software Development</span>
-                            <span>85%</span>
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-anchor-placement="top bottom"  role="progressbar" aria-label="Basic example" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div><!--/.single-progress-->
-                    <div class="single-progress">
-                        <label class="d-flex justify-content-between">
-                            <span>Web Development</span>
-                            <span>95%</span>
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1200" data-aos-anchor-placement="top bottom"  role="progressbar" aria-label="Basic example" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div><!--/.single-progress-->
-                    <div class="single-progress">
-                        <label class="d-flex justify-content-between">
-                            <span>UL / UX Design</span>
-                            <span>80%</span>
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1400" data-aos-anchor-placement="top bottom"  role="progressbar" aria-label="Basic example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div><!--/.single-progress-->
-                </div><!--/.left-content-choose-->
-            </div>
-            <div class="col-md-6">
-                <div class="right-img-choose">
-                    <img src="img/choose-img25.jpg" alt="">
-                    <div class="exp"><span>4</span> Years Experience</div>
-                </div><!--/.right-img-choose-->
-            </div>
-        </div>
-    </div>
 </section>
-<!--why choose us end-->
+<!--our services area end-->
+
+ <!--porfolio area start-->
+ <div class="portfolio-sec pt-120">
+    <div class="sec-title v2 text-center mb-50">
+        <h3>Our Portfolio</h3>
+        <h2 class="tag1">Our Impressive Portfolio</h2>
+    </div>
+    <div class="portfolio-slider-wrap">
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/pickup-2.png')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>Order Pizza Web App</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/f-and-b-software-modules-features-and-functionalities-bottom.png')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>Restaurant Management</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/attachment_89547603.jpg')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>Water Company Website</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/grocery-ecommerce-website-development-Kerala-India.jpg')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>Shopping project</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/blogpost.jpg')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>Doctor Appointment System</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/Build-Realtime-chat-app.png')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>Real Time Chat Application</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/opendi-local-listing-bwa-01.png')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>Listing Website</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/jobportal-free-template.jpg')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>Job Portal  Web Application</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/XII2UIITYNEZBNM4BE2GI3PIAY.jpg')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>Crypto Wallets.</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/8b75d6197aa027b41cd8c96776ac5c77.jpg')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>UEX.</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+        <div class="single">
+            <div class="portfolio-inner-sl">
+                <div class="imgs">
+                    <img src="{{asset('img/e480b7b7e33eaa4a13113bb7a6d9f6fd.jpg')}}" alt="">
+                </div>
+                <div class="hidden-cont">
+                    <div class="d-flex justify-content-between">
+                        <div class="name">
+                            <h3>Elnarti.</h3>
+                            {{-- <p>Print, Books</p> --}}
+                        </div>
+                        <div class="btns">
+                            <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+            </div><!--/.portfolio-inner-sl-->
+        </div>
+    </div><!--/.portfolio-slider-wrap-->
+</div>
+<!--porfolio area end-->
 
 <!--pricing plan start-->
 <section class="pricing-plan-sec pt-120">
@@ -330,28 +581,6 @@
                             </div>
                         </div><!--/.single-plan-area-->
                     </div>
-                    {{-- <div class="col-md-6 col-xl-4">
-                        <div class="single-plan-area" data-aos="fade-up" data-aos-delay="500">
-                            <div class="icons">
-                                <img src="img/icons/plan3.svg" alt="">
-                            </div>
-                            <div class="plan-hdr">
-                                <h2>Silver Plan</h2>
-                                <h1><sup>$</sup>60<small>Per Month</small></h1>
-                            </div>
-                            <div class="plan-body">
-                                <ul class="list-icons d-flex flex-column align-items-center">
-                                    <li>Free Consultations</li>
-                                    <li>Business Planning</li>
-                                    <li>Investment Process</li>
-                                    <li>Market Research</li>
-                                    <li>Online Support</li>
-                                    <li>Unlimited Updates</li>
-                                </ul>
-                                <a href="{{ url('contact') }}" class="btn">Choose Plan</a>
-                            </div>
-                        </div><!--/.single-plan-area-->
-                    </div> --}}
                 </div>
             </div>
         </div>
@@ -409,68 +638,44 @@
         </div>
     </div>
 </div>
-<!--fun fact start-->
-<div class="fun-fact-sec pt-120">
+<!--feature text start-->
+<div class="feature-txt-v2 px-120">
     <div class="container">
-        <div class="row g-0">
-            <div class="col-12">
-                <div class="fun-fact-wraps">
-                    <div class="row g-4 gy-5 align-items-center">
-                        <div class="col-md-4">
-                            <div class="singl-fact-count" data-aos="fade-in" data-aos-delay="100">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-0">
-                                        <div class="icon">
-                                            <img src="img/icons/fun1.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="flex-shrink-1">
-                                        <h2 class="counter">300</h2>
-                                        <p>Project Complete</p>
-                                    </div>
-                                </div>
-                            </div><!--/.singl-fact-count-->
-                        </div>
-                        <div class="col-md-4">
-                            <div class="singl-fact-count"  data-aos="fade-in" data-aos-delay="200">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-0">
-                                        <div class="icon">
-                                            <img src="img/icons/fun2.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="flex-shrink-1">
-                                        <h2 class="counter">200</h2>
-                                        <p>Satisfied Clients</p>
-                                    </div>
-                                </div>
-                            </div><!--/.singl-fact-count-->
-                        </div>
-                        <div class="col-md-4">
-                            <div class="singl-fact-count"  data-aos="fade-in" data-aos-delay="300">
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-grow-0">
-                                        <div class="icon">
-                                            <img src="img/icons/fun3.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="flex-shrink-1">
-                                        <h2 class="counter">3</h2>
-                                        <p>Award win</p>
-                                    </div>
-                                </div>
-                            </div><!--/.singl-fact-count-->
-                        </div>
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+                <div class="left-content-ftr">
+                    <div class="sec-title v2">
+                        <h3>Bringing Action To Brands</h3>
+                        <h2 class="tag1">Business Indices, Visitor Traffic Latest Analytic Tools</h2>
+                        <p>At Digital Market Agency, we recognize that data is the cornerstone of informed decision-making. Our suite of business indices and visitor traffic analytic tools offer a comprehensive view of your business's performance, enabling you to identify trends, seize opportunities, and stay ahead of the curve.</p>
                     </div>
-                </div><!--/.fun-fact-wraps-->
+                    <div class="inner-bx-ftr" data-aos="fade-in">
+                        <p>Get Started With a Dynamic Web Optimization Campaign.</p>
+                        <ul>
+                            <li>
+                                <h2>10.95%</h2>
+                                <span>Increase In Monthly</span>
+                            </li>
+                            <li>
+                                <h2>6.50%</h2>
+                                <span>Decrease In Yearly</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--/.left-content-ftr-->
+            </div>
+            <div class="col-md-6">
+                <div class="right-img-ftr text-end">
+                    <img src="{{asset('img/feature-img.png')}}" data-aos="flip-left" data-aos-duration="2000" alt="">
+                </div><!--/.right-img-ftr-->
             </div>
         </div>
     </div><!--/.container-->
 </div>
-<!--fun fact end-->
+<!--feature text end-->
 
 <!--contact area start-->
-<div class="contact-area-sec pb-120">
+{{-- <div class="contact-area-sec pb-120">
     <div class="container">
         <div class="row g-0">
             <div class="col-12">
@@ -542,10 +747,11 @@
             </div>
         </div>
     </div><!--/.container-->
-</div>
+</div> --}}
 <!--contact area end-->
+<!--Testimonial v2 end-->
 <!-- video pop -->
-<div class="modal fade video-pop" id="myModalVideo" tabindex="-1" role="dialog" aria-hidden="true">
+{{-- <div class="modal fade video-pop" id="myModalVideo" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -558,38 +764,6 @@
             </div>
         </div>
     </div>
-</div>
-
-
-
-
-<!--promo text start-->
-<div class="promo-text-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="inner-promo-txt">
-                    <div class="d-md-flex justify-content-between align-items-center">
-                        <div class="sec-title">
-                            <h3 class="text-white"><img src="img/icons/title-icon-infinity.svg" alt=""> We Are Hire</h3>
-                            <h2 class="text-white tag1">Tell us About Your Business, We are Ready to Solve.</h2>
-                        </div>
-                        <div class="btn-area">
-                            <a href="{{ url('contact') }}" class="btn btn-default">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--/.container-->
-    <span class="banner-frame-one"></span>
-    <span class="banner-frame-two"></span>
-    <span class="banner-frame-three"></span>
-    <span class="banner-frame-four"></span>
-    <div class="shape-top-left" data-aos="fade-down" data-aos-delay="500"></div>
-    <div class="shape-bottom-right" data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom" data-aos-delay="1000"></div>
-</div>
-<!--promo text end-->
+</div> --}}
 @endsection
 

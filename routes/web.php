@@ -26,9 +26,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('about', function () {
-    return view('about');
-});
+// Route::get('about', function () {
+//     return view('about');
+// });
 
 Route::get('service-details', function () {
     return view('service-details');
@@ -42,9 +42,9 @@ Route::get('contact', function () {
     return view('contact');
 });
 
-Route::get('team', function () {
-    return view('team');
-});
+// Route::get('team', function () {
+//     return view('team');
+// });
 
 Route::get('portfolio', function () {
     return view('portfolio');
