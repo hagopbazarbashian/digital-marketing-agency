@@ -11,10 +11,10 @@
 
     @include('admin.layout.styles')
 
-    @include('admin.layout.scripts')
+
 
 </head>
- 
+
 <body>
 <div id="app">
     <div class="main-wrapper">
@@ -37,7 +37,7 @@
 </div>
 
 @include('admin.layout.scripts_footer')
-
+@include('admin.layout.scripts')
 
 @if ($errors->any())
 @foreach ($errors->all() as $error)

@@ -28,6 +28,7 @@
 
 <!--portfolio page start-->
 <section class="portfolio-sec-pg px-120">
+    @if ($portfolios_show)
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -36,219 +37,32 @@
                     <h1>Our Impressive Portfolio</h1>
                 </div>
             </div>
+            @foreach ($portfolios as $portfolio)
             <div class="col-12">
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-inner-sl">
                             <div class="imgs">
-                                <img src="img/pickup-2.png" alt="">
+                                <img src="{{asset('portfolio/'.$portfolio->image)}}" alt="">
                             </div>
                             <div class="hidden-cont">
                                 <div class="d-flex justify-content-between">
                                     <div class="name">
-                                        <h3>Order Pizza Web App</h3>
+                                        <h3>{{$portfolio->title}}</h3>
                                         {{-- <p>Print, Books</p> --}}
                                     </div>
                                     <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
+                                        <a href="{{$portfolio->link}}" class="btn"><i class='bx bx-plus'></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
-                        </div><!--/.portfolio-inner-sl-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-inner-sl">
-                            <div class="imgs">
-                                <img src="img/f-and-b-software-modules-features-and-functionalities-bottom.png" alt="">
-                            </div>
-                            <div class="hidden-cont">
-                                <div class="d-flex justify-content-between">
-                                    <div class="name">
-                                        <h3>Restaurant Management</h3>
-                                        {{-- <p>Print, Books</p> --}}
-                                    </div>
-                                    <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
-                        </div><!--/.portfolio-inner-sl-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-inner-sl">
-                            <div class="imgs">
-                                <img src="img/attachment_89547603.jpg" alt="">
-                            </div>
-                            <div class="hidden-cont">
-                                <div class="d-flex justify-content-between">
-                                    <div class="name">
-                                        <h3>Water Company Website</h3>
-                                        {{-- <p>Print, Books</p> --}}
-                                    </div>
-                                    <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
-                        </div><!--/.portfolio-inner-sl-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-inner-sl">
-                            <div class="imgs">
-                                <img src="img/grocery-ecommerce-website-development-Kerala-India.jpg" alt="">
-                            </div>
-                            <div class="hidden-cont">
-                                <div class="d-flex justify-content-between">
-                                    <div class="name">
-                                        <h3>Shopping project</h3>
-                                        {{-- <p>Print, Books</p> --}}
-                                    </div>
-                                    <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
-                        </div><!--/.portfolio-inner-sl-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-inner-sl">
-                            <div class="imgs">
-                                <img src="img/blogpost.jpg" alt="">
-                            </div>
-                            <div class="hidden-cont">
-                                <div class="d-flex justify-content-between">
-                                    <div class="name">
-                                        <h3>Doctor Appointment System</h3>
-                                        {{-- <p>Print, Books</p> --}}
-                                    </div>
-                                    <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
-                        </div><!--/.portfolio-inner-sl-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-inner-sl">
-                            <div class="imgs">
-                                <img src="img/Build-Realtime-chat-app.png" alt="">
-                            </div>
-                            <div class="hidden-cont">
-                                <div class="d-flex justify-content-between">
-                                    <div class="name">
-                                        <h3>Real Time Chat Application</h3>
-                                        {{-- <p>Print, Books</p> --}}
-                                    </div>
-                                    <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
-                        </div><!--/.portfolio-inner-sl-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-inner-sl">
-                            <div class="imgs">
-                                <img src="img/opendi-local-listing-bwa-01.png" alt="">
-                            </div>
-                            <div class="hidden-cont">
-                                <div class="d-flex justify-content-between">
-                                    <div class="name">
-                                        <h3>Listing Website</h3>
-                                        {{-- <p>Print, Books</p> --}}
-                                    </div>
-                                    <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
-                        </div><!--/.portfolio-inner-sl-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-inner-sl">
-                            <div class="imgs">
-                                <img src="img/jobportal-free-template.jpg" alt="">
-                            </div>
-                            <div class="hidden-cont">
-                                <div class="d-flex justify-content-between">
-                                    <div class="name">
-                                        <h3>Job Portal  Web Application</h3>
-                                        {{-- <p>Print, Books</p> --}}
-                                    </div>
-                                    <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
-                        </div><!--/.portfolio-inner-sl-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-inner-sl">
-                            <div class="imgs">
-                                <img src="img/XII2UIITYNEZBNM4BE2GI3PIAY.jpg" alt="">
-                            </div>
-                            <div class="hidden-cont">
-                                <div class="d-flex justify-content-between">
-                                    <div class="name">
-                                        <h3>Crypto Wallets.</h3>
-                                        {{-- <p>Print, Books</p> --}}
-                                    </div>
-                                    <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
-                        </div><!--/.portfolio-inner-sl-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-inner-sl">
-                            <div class="imgs">
-                                <img src="img/8b75d6197aa027b41cd8c96776ac5c77.jpg" alt="">
-                            </div>
-                            <div class="hidden-cont">
-                                <div class="d-flex justify-content-between">
-                                    <div class="name">
-                                        <h3>UEX.</h3>
-                                        {{-- <p>Print, Books</p> --}}
-                                    </div>
-                                    <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
-                        </div><!--/.portfolio-inner-sl-->
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-inner-sl">
-                            <div class="imgs">
-                                <img src="img/e480b7b7e33eaa4a13113bb7a6d9f6fd.jpg" alt="">
-                            </div>
-                            <div class="hidden-cont">
-                                <div class="d-flex justify-content-between">
-                                    <div class="name">
-                                        <h3>Elnarti.</h3>
-                                        {{-- <p>Print, Books</p> --}}
-                                    </div>
-                                    <div class="btns">
-                                        <a href="{{ url('contact') }}" class="btn"><i class='bx bx-plus'></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="{{ url('contact') }}" class="go-hidden"><i class='bx bx-plus'></i></a>
+                            <a href="{{$portfolio->link}}" class="go-hidden"><i class='bx bx-plus'></i></a>
                         </div><!--/.portfolio-inner-sl-->
                     </div>
                 </div>
             </div>
+            @endforeach
+
             <div class="col-12">
                 <div class="load-btns mt-50 text-center">
                     <a href="{{ route('contact') }}" class="btn btn-default">View More Projects</a>
@@ -256,7 +70,7 @@
             </div>
         </div>
     </div><!--/.container-->
+    @endif
 </section>
 <!--portfolio page end-->
-
 @endsection

@@ -84,10 +84,10 @@
                                         <i class='bx bxs-envelope' ></i>
                                         <a href="mailto:support@developsmart.xyz">support@developsmart.xyz</a>
                                     </li>
-                                    <li>
+                                    {{-- <li>
                                         <i class='bx bxs-map' ></i>
                                         <address>374 FA Tower, William S Blvd, Melbourne 2721, IL, USA</address>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </div><!--/.ftr-widget-->
                         </div>

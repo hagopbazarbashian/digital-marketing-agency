@@ -20,4 +20,4 @@
 <!--main style-->
 <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
 {{-- iziToast --}}
-<link rel="stylesheet" type="text/css" href="{{ asset('css/iziToast.min.css') }}">
+<link rel="stylesheet" href="{{ asset('dist/css/iziToast.min.css') }}">

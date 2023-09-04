@@ -51,11 +51,11 @@
                             </div>
                             <div class="plan-body">
                                 <ul class="list-icons d-flex flex-column align-items-center">
-                                    <li>Free Consultations</li>
-                                    <li>Business Planning</li>
-                                    <li>Investment Process</li>
-                                    <li class="dis">Market Research</li>
-                                    <li class="dis">Online Support</li>
+                                    <li>250 MB Storage</li>
+                                    <li>250 MB Bandwidth</li>
+                                    <li>Basic web page</li>
+                                    <li>Subdomain</li>
+                                    <li>Online Support</li>
                                     <li class="dis">Unlimited Updates</li>
                                 </ul>
                                 <a href="{{ route('contact') }}" class="btn">Choose Plan</a>
@@ -69,22 +69,23 @@
                             </div>
                             <div class="plan-hdr">
                                 <h2>Gold Plan</h2>
-                                <h1><sup>$</sup>30<small>Per Month</small></h1>
+                                <h1><sup>$</sup>25<small></small></h1>
                             </div>
                             <div class="plan-body">
                                 <ul class="list-icons d-flex flex-column align-items-center">
-                                    <li>Free Consultations</li>
-                                    <li>Business Planning</li>
-                                    <li>Investment Process</li>
-                                    <li class="dis">Market Research</li>
-                                    <li class="dis">Online Support</li>
+                                    <li>Free Domain for 1 year</li>
+                                    <li>3GB storage</li>
+                                    <li>3GB bandwidth</li>
+                                    <li>Connect Your Domain</li>
+                                    <li>Store</li>
                                     <li>Unlimited Updates</li>
+                                    <li>Online Support</li>
                                 </ul>
                                 <a href="{{ route('contact') }}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
                     </div>
-                    <div class="col-md-6 col-xl-4">
+                    {{-- <div class="col-md-6 col-xl-4">
                         <div class="single-plan-area" data-aos="fade-up" data-aos-delay="500">
                             <div class="icons">
                                 <img src="img/icons/plan3.svg" alt="">
@@ -105,7 +106,7 @@
                                 <a href="{{ route('contact') }}" class="btn">Choose Plan</a>
                             </div>
                         </div><!--/.single-plan-area-->
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

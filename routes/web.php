@@ -4,11 +4,14 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InfoController;
 use App\Http\Controllers\BlogDetailsmController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PortfolioUserController;
 use App\Http\Controllers\Basic\BasicPlanController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminBasicWebPage;
 use App\Http\Controllers\Admin\AdminSingleBasicPage;
+use App\Http\Controllers\Admin\PortfolioController;
 
 
 /*
@@ -22,9 +25,8 @@ use App\Http\Controllers\Admin\AdminSingleBasicPage;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/' , [HomeController::class ,'index'])->name('/');
 
 // Route::get('about', function () {
 //     return view('about');
@@ -46,9 +48,7 @@ Route::get('contact', function () {
 //     return view('team');
 // });
 
-Route::get('portfolio', function () {
-    return view('portfolio');
-});
+Route::get('portfolio_user' , [PortfolioUserController::class ,'index'])->name('portfolio_user');
 
 Route::get('pricing', function () {
     return view('pricing');
@@ -86,4 +86,6 @@ Route::middleware('admin:admin')->group(function () {
     Route::resource('basic-page' , AdminBasicWebPage::class);
     // Single Basic page
     Route::resource('single-basic-plan' , AdminSingleBasicPage::class);
+    // Portfolio
+    Route::resource('portfolio-admin', PortfolioController::class);
 });

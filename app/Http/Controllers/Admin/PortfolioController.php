@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\page;
+use App\Models\portfolio;
 
-class AdminBasicWebPage extends Controller
+class PortfolioController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class AdminBasicWebPage extends Controller
      */
     public function index()
     {
-        $pages = page::get();
-        return view('admin.basic-plan' ,compact('pages'));
+        $portfolios = portfolio::orderBy('created_at', 'desc')->get();
+         return view('admin.portfolio',compact('portfolios'));
     }
 
     /**
@@ -26,7 +26,7 @@ class AdminBasicWebPage extends Controller
      */
     public function create()
     {
-         return view('admin.basic-plan-create');
+        return view('admin.portfolio-create');
     }
 
     /**
@@ -38,19 +38,21 @@ class AdminBasicWebPage extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name'=>'required',
-            'image'=>'required'
+            'image'=>'required',
+            'title'=>'required'
         ]);
         $image = $request->file('image');
         $filename = uniqid() . '.' . $image->getClientOriginalExtension();
-        $image->move(public_path('page'), $filename);
+        $image->move(public_path('portfolio'), $filename);
 
-        page::create([
+        portfolio::create([
+            'image'=>$filename,
             'name'=>$request->name,
-            'image'=>$filename  
+            'title'=>$request->title,
+            'link'=>$request->link,
         ]);
 
-        return redirect()->route('basic-page.index')->with('succes' , 'Data successfully Saved');
+        return redirect()->route('portfolio-admin.index')->with('succes' , 'Data successfully Saved');
     }
 
     /**
@@ -72,9 +74,8 @@ class AdminBasicWebPage extends Controller
      */
     public function edit($id)
     {
-        $page = page::where('id' ,$id)->first();
-
-        return view('admin.basic-plan-edit' , compact('page'));
+        $portfolio = portfolio::where('id' , $id)->first();
+        return view('admin.portfolio-edit',compact('portfolio'));
     }
 
     /**
@@ -86,34 +87,30 @@ class AdminBasicWebPage extends Controller
      */
     public function update(Request $request, $id)
     {
-        $page = page::where('id' ,$id)->first();
 
+        $portfolio = portfolio::where('id' ,$id)->first();
         $request->validate([
-            'name'=>'required',
-            // 'image'=>'required'
+            'title' => 'required',
+            // 'image' => 'required|image', // Requires a valid image file
         ]);
 
-         // Update the name field
-          $page->name = $request->name;
-
-         // Handle the image upload if provided
-         if ($request->hasFile('image')) {
-             $image = $request->file('image');
-             $filename = uniqid() . '.' . $image->getClientOriginalExtension();
-             $image->move(public_path('page'), $filename);
-         }
-
-          // Save the updated record
-           $page->save();
-
-         $page->update([
-            'name'=>$request->name,
-            'image'=>$filename
-         ]);
-
-         return redirect()->route('basic-page.index')->with('succes' , 'Update Successfully');
 
 
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $filename = uniqid() . '.' . $image->getClientOriginalExtension();
+            $image->move(public_path('portfolio'), $filename);
+            $portfolio->image = $filename;
+            $portfolio->save();
+        }
+
+        // Update the portfolio record
+        $portfolio->update([
+            'title' => $request->title,
+            'link' => $request->link
+        ]);
+
+        return redirect()->route('portfolio-admin.index')->with('succes', 'Update Successfully');
     }
 
     /**
@@ -124,10 +121,9 @@ class AdminBasicWebPage extends Controller
      */
     public function destroy($id)
     {
-
-        $page = page::where('id' , $id)->first();
-        page::where('id' , $id)->delete();
-        return redirect()->route('basic-page.index')->with('succes' , 'Data is deleted Successfully');
+        $page = portfolio::where('id' , $id)->first();
+        portfolio::where('id' , $id)->delete();
+        return redirect()->route('portfolio-admin.index')->with('succes' , 'Data is deleted Successfully');
 
     }
 }

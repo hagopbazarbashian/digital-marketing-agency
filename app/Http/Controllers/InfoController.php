@@ -15,7 +15,7 @@ class InfoController extends Controller
             'name' => 'required',
             'message'=>'required'
         ]);
-
+ 
         Info::create([
             'name'=>$request->name,
             'email'=>$request->email,

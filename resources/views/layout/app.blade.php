@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Ortencey Marketing Agency</title>
     @include('layout.style')
-
-    @include('layout.underscript')
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -115,7 +113,7 @@
                                             <a href="{{ url('team') }}" class="nav-link {{ request()->is('team') ? 'active' : '' }}">Team</a>
                                         </li> --}}
                                         <li class="nav-item">
-                                            <a href="{{ url('portfolio') }}" class="nav-link {{ request()->is('portfolio') ? 'active' : '' }}">Portfolio</a>
+                                            <a href="{{ route('portfolio_user') }}" class="nav-link {{ request()->is('portfolio_user') ? 'active' : '' }}">Portfolio</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ url('pricing') }}" class="nav-link {{ request()->is('pricing') ? 'active' : '' }}">Pricing</a>
@@ -185,5 +183,38 @@
     <!-- Return to Top -->
     <a href="javascript:" id="return-to-top"><i class="bx bx-chevron-up"></i></a>
     @include('layout.script')
+    @include('layout.underscript')
+    @if ($errors->any())
+    @foreach ($errors->all() as $error)
+    <script>
+        iziToast.error({
+        title: '',
+        position: 'topRight',
+        message: '{{ $error }}',
+    });
+    </script>
+    @endforeach
+
+    @endif
+
+    @if (session()->get('error'))
+    <script>
+        iziToast.error({
+        title: '',
+        position: 'topRight',
+        message: '{{ session()->get('error') }}',
+    });
+    </script>
+    @endif
+
+    @if (session()->get('succes'))
+    <script>
+        iziToast.success({
+        title: '',
+        position: 'topRight',
+        message: '{{ session()->get('succes') }}',
+    });
+    </script>
+    @endif
 </body>
 </html>
