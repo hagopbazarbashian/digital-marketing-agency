@@ -47,6 +47,10 @@ class PortfolioController extends Controller
 
         portfolio::create([
             'image'=>$filename,
+            'startdate'=>$request->startdate,
+            'enddate'=>$request->enddate,
+            'client'=>$request->client,
+            'category'=>$request->category,
             'name'=>$request->name,
             'title'=>$request->title,
             'link'=>$request->link,

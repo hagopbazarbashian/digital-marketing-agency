@@ -28,7 +28,7 @@
                       <div class="ftr-widget v2 about">
                          <h2>About Company</h2>
                          <p>
-                            Ortencey is a digital marketing agency that has been providing quality services for seven years. Founded in 2016, the company has established itself as a leader in the digital marketing industry, offering a wide
+                            Developer Smart agency that has been providing quality services for seven years. Founded in 2016, the company has established itself as a leader in the digital marketing industry, offering a wide
                             range of services to help businesses enhance their online presence, generate leads, and increase sales.
                          </p>
                          <ul class="socials">

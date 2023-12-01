@@ -36,26 +36,26 @@
                     <div class="port-info-client">
                         <div class="row gy-5">
                             <div class="col-md-6 col-lg-4">
-                               <p><strong>Start Date:</strong> <span>15 Dec 2022 </span></p>
-                               <p><strong>End Date:</strong> <span>13 Jan 2023 </span></p>
+                               <p><strong>Start Date:</strong> <span>{{ date('d M Y', strtotime($portfolios_single->startdate)) }}</span></p>
+                               <p><strong>End Date:</strong> <span>{{ date('d M Y', strtotime($portfolios_single->enddate)) }}</span></p>
                             </div>
                             <div class="col-md-6 col-lg-4">
-                                <p><strong>client:</strong> <span>Jiyatan Raw </span></p>
-                                <p><strong>Tags:</strong> <span>Digital Agency </span></p>
+                                <p><strong>client:</strong> <span>{{ $portfolios_single->client }}</span></p>
+                                <p><strong>Tags:</strong> <span>{{ $portfolios_single->title }} </span></p>
                             </div>
                             <div class="col-md-6 col-lg-4">
-                                <p><strong>Website:</strong> <span>JiyatanRaw.com </span></p>
-                                <p><strong>Category:</strong> <span>Agency </span></p>
+                                <p><strong>Website:</strong> <a href="{{ $portfolios_single->link }}" target="_blank">{{ $portfolios_single->link }}</a></p>
+                                <p><strong>Category:</strong> <span>{{$portfolios_single->category}}</span></p>
                             </div>
                         </div>
                     </div><!--/.port-info-client-->
                     <div class="port-information mt-50">
                         <div class="row g-4">
-                            <div class="col-12 mb-50">
+                            {{-- <div class="col-12 mb-50">
                                 <h2>Human Figurines Using Ladder to Reach Cracked lit Lightbulb as an Idea</h2>
                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look as even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the as Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over Latin words need to as be sure there isn't anything as embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined.</p>
-                            </div>
-                            <div class="col-md-6">
+                            </div> --}}
+                            {{-- <div class="col-md-6">
                                 <ul class="list-icons d-flex flex-wrap align-items-start">
                                     <li>Research beyond the business plan</li>
                                     <li>Customer Oriented Program Daily</li>
@@ -74,34 +74,25 @@
                                         <img src="img/portfolio-details3.jpg" alt="">
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-md-6">
                                 <div class="service-widget-right portfolio ">
                                     <h2>Need Your Help?</h2>
                                     <ul class="d-flex flex-wrap align-items-start">
                                         <li>
                                             <span><i class="bx bxs-phone"></i></span>
-                                            <a href="tel:123456">+(323) 750-1234</a>
-                                        </li>
-                                        <li>
-                                            <span><i class='bx bxl-skype'></i></span>
-                                            <a href="#">Ross Gellar</a>
+                                            <a href="tel:+37555446061">+(374) 55-446061</a>
                                         </li>
                                         <li>
                                             <span><i class="bx bxs-envelope"></i></span>
-                                            <a href="mailto:infoyour@albashti.com">infoyour@albashti.com</a>
-                                        </li>
-
-                                        <li>
-                                            <span><i class="bx bxs-map"></i></span>
-                                            <address>374 FA Tower, William S Blvd 2721, IL, USA</address>
+                                            <a href="mailto:support@developsmart.xyz">support@developsmart.xyz</a>
                                         </li>
                                     </ul>
                                 </div><!--/.portfolio-->
-                                <div class="extra-txt mt-50">
+                                {{-- <div class="extra-txt mt-50">
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do look as even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
                                     <p>Hidden in the middle of text. All the as Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Inte rnet. It uses a dictionary of over Latin words need to as be sure.</p>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>

@@ -19,6 +19,22 @@
                             <input type="file" class="form-control" name="image">
                         </div>
                         <div class="form-group mb-3">
+                            <label>Start Date *</label>
+                            <input type="date" class="form-control" name="startdate">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>End Date *</label>
+                            <input type="date" class="form-control" name="enddate">
+                        </div>
+                         <div class="form-group mb-3">
+                            <label>Client *</label>
+                            <input type="text" class="form-control" name="client">
+                        </div>
+                         <div class="form-group mb-3">
+                            <label>Category *</label>
+                            <input type="text" class="form-control" name="category">
+                        </div>
+                        <div class="form-group mb-3">
                             <label>Title *</label>
                             <input type="text" class="form-control" name="title">
                         </div>

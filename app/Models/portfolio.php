@@ -9,6 +9,10 @@ class portfolio extends Model
 {
     protected $fillable = [
         'image',
+        'startdate',
+        'enddate',
+        'client',
+        'category',
         'title',
         'link'
     ];
