@@ -2,11 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InfoController;
-use App\Http\Controllers\BlogDetailsmController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortfolioUserController;
-use App\Http\Controllers\Basic\BasicPlanController;
+use App\Http\Controllers\SinglePortfolio;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminBasicWebPage;
@@ -28,49 +27,20 @@ use App\Http\Controllers\Admin\PortfolioController;
 
 Route::get('/' , [HomeController::class ,'index'])->name('/');
 
-// Route::get('about', function () {
-//     return view('about');
-// });
-
-Route::get('service-details', function () {
-    return view('service-details');
-});
-
-Route::get('service', function () {
-    return view('service');
-});
 
 Route::get('contact', function () {
     return view('contact');
 });
 
-// Route::get('team', function () {
-//     return view('team');
-// });
-
 Route::get('portfolio_user' , [PortfolioUserController::class ,'index'])->name('portfolio_user');
 
-Route::get('pricing', function () {
-    return view('pricing');
-});
 
-Route::get('blog-full', function () {
-    return view('blog-full');
-});
-
-// For Basic Plan
-Route::get('/basic-plan' , [BasicPlanController::class , 'index'])->name('basic-plan');
-// Single Basic Plan
-Route::get('/single-basic-plan/{id}' , [BasicPlanController::class , 'singlepage'])->name('single-basic-plan');
-// Ajax
-Route::post('/store-data', [BasicPlanController::class , 'store'])->name('store.data');
+// Single Portfolio
+Route::get('single/{id}' , [SinglePortfolio::class , 'index'])->name('single');
 
 // Send Info To Admin
 Route::post('send-info' , [InfoController::class , 'store'])->name('send-info');
 Route::post('contact' , [InfoController::class , 'contact'])->name('contact');
-
-// Blog Detalis
-Route::get('blog-details' , [BlogDetailsmController::class , 'index'])->name('blog-details');
 
 // Appointment
 Route::post('/store' ,[AppointmentController::class , 'store'])->name('store-appointment');

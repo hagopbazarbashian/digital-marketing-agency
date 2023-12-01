@@ -19,5 +19,6 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/slick.css') }}">
 <!--main style-->
 <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
 {{-- iziToast --}}
 <link rel="stylesheet" href="{{ asset('dist/css/iziToast.min.css') }}">
