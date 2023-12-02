@@ -110,6 +110,10 @@ class PortfolioController extends Controller
 
         // Update the portfolio record
         $portfolio->update([
+            'startdate'=>$request->startdate,
+            'enddate'=>$request->enddate,
+            'client'=>$request->client,
+            'category'=>$request->category,
             'title' => $request->title,
             'link' => $request->link
         ]);

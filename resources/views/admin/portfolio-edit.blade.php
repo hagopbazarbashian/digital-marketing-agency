@@ -21,6 +21,22 @@
                             <h1>Uploaded Image:</h1>
                             <h3><img src="{{asset('portfolio/'.$portfolio->image)}}" style="width: 100%;" alt=""></h3>
                         </div>
+                         <div class="form-group mb-3">
+                            <label>Start Date *</label>
+                            <input type="date" class="form-control" name="startdate" value="{{$portfolio->startdate}}">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>End Date *</label>
+                            <input type="date" class="form-control" name="enddate" value="{{$portfolio->enddate}}">
+                        </div>
+                         <div class="form-group mb-3">
+                            <label>Client *</label>
+                            <input type="text" class="form-control" name="client" value="{{$portfolio->client}}">
+                        </div>
+                         <div class="form-group mb-3">
+                            <label>Category *</label>
+                            <input type="text" class="form-control" name="category" value="{{$portfolio->category}}">
+                        </div>
                         <div class="form-group mb-3">
                             <label>Title *</label>
                             <input type="text" class="form-control" name="title" value="{{$portfolio->title}}">
