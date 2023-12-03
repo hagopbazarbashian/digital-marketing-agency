@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\portfolio;
-
+use App\Models\portfolio; 
 class SinglePortfolio extends Controller
 {
      public function index($id){

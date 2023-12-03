@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\page;
 use App\Models\contact;
+use App\Models\Visitor;
 
 class AdminHomeController extends Controller
 {
@@ -16,7 +17,8 @@ class AdminHomeController extends Controller
      */
     public function index()
     {
-        return view('admin.home');
+        $visitorCount = Visitor::count();
+        return view('admin.home', compact('visitorCount'));
     }
 
     /**

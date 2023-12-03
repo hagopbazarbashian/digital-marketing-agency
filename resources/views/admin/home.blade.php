@@ -8,10 +8,10 @@
             </div>
             <div class="card-wrap">
                 <div class="card-header">
-                    <h4>Total News Categories</h4>
+                    <h4>Visiter</h4>
                 </div>
                 <div class="card-body">
-                    12
+                    {{$visitorCount}}
                 </div>
             </div>
         </div>
