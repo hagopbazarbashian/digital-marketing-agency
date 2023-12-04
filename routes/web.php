@@ -58,8 +58,4 @@ Route::middleware('admin:admin')->group(function () {
     Route::resource('single-basic-plan' , AdminSingleBasicPage::class);
     // Portfolio
     Route::resource('portfolio-admin', PortfolioController::class);
-
-    Route::group(['middleware' => 'track-visitor'], function () {
-        // Define the routes you want to track here
-    });
 });

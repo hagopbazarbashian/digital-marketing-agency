@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\page;
 use App\Models\contact;
 use App\Models\Visitor;
+use App\Models\portfolio;
 
 class AdminHomeController extends Controller
 {
@@ -18,7 +19,9 @@ class AdminHomeController extends Controller
     public function index()
     {
         $visitorCount = Visitor::count();
-        return view('admin.home', compact('visitorCount'));
+        $contact = contact::count();
+        $portfolio = portfolio::count();
+        return view('admin.home', compact('visitorCount','contact','portfolio'));
     }
 
     /**
@@ -81,6 +84,8 @@ class AdminHomeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $contact = contact::where('id' , $id)->first();
+        $contact->delete();
+        return redirect()->back()->with('succes' , 'Data is deleted Successfully');
     }
 }

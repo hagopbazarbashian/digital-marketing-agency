@@ -23,10 +23,10 @@
             </div>
             <div class="card-wrap">
                 <div class="card-header">
-                    <h4>Total News</h4>
+                    <h4>Total Portfolyo</h4>
                 </div>
                 <div class="card-body">
-                    122
+                    {{$portfolio}}
                 </div>
             </div>
         </div>
@@ -38,10 +38,10 @@
             </div>
             <div class="card-wrap">
                 <div class="card-header">
-                    <h4>Total Users</h4>
+                    <h4>Users Contact</h4>
                 </div>
                 <div class="card-body">
-                    45
+                    {{$contact}}
                 </div>
             </div>
         </div>

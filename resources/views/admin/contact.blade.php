@@ -27,8 +27,16 @@
                                         <td>{{ $contact->email }}</td>
                                         <td>{{ $contact->number }}</td>
                                         <td>{{ $contact->message }}</td>
+                                        <td class="pt_10 pb_10">
+                                            <form method="POST" action="{{route('admin.destroy',$contact->id)}}">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button  class="btn btn-danger btn-sm" onClick="return confirm('Are you sure?');">Delete</button>
+                                            </form>
+                                        </td>
                                     </tr>
                                 @endforeach
+
                             </tbody>
                         </table>
                     </div>
