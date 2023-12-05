@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminBasicWebPage;
 use App\Http\Controllers\Admin\AdminSingleBasicPage;
 use App\Http\Controllers\Admin\PortfolioController;
+use App\Http\Controllers\Admin\SendEmailToUserController;
 
 
 /*
@@ -58,4 +59,6 @@ Route::middleware('admin:admin')->group(function () {
     Route::resource('single-basic-plan' , AdminSingleBasicPage::class);
     // Portfolio
     Route::resource('portfolio-admin', PortfolioController::class);
+    // Send Email To User
+    Route::resource('send-email', SendEmailToUserController::class);
 });
