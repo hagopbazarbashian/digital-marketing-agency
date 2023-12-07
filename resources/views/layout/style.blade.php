@@ -22,3 +22,6 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
 {{-- iziToast --}}
 <link rel="stylesheet" href="{{ asset('dist/css/iziToast.min.css') }}">
+{{-- For register My User --}}
+<link rel="stylesheet" href="{{asset('css/register/style.css')}}">
+

@@ -74,7 +74,8 @@ class SendEmailToUserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $sendemail = sendemail::where('id' , $id)->first();
+        return view('admin.message-to-user-edit',compact('sendemail'));
     }
 
     /**
@@ -86,7 +87,22 @@ class SendEmailToUserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $sendemail = sendemail::where('id' , $id)->first();
+        
+        $request->validate([
+            'email'=>'required',
+            'title'=>'required',
+            'body'=>'required'
+        ]);
+
+         $sendemail->update([
+            'email'=>$request->email,
+            'title'=>$request->title,
+            'body'=>$request->body
+        ]);
+
+        $mail = Mail::to($sendemail->email)->send(new SendEmailToUserMail($sendemail));
+        return redirect()->back()->with('succes' , 'your email was sent agian successfully');
     }
 
     /**
@@ -97,6 +113,9 @@ class SendEmailToUserController extends Controller
      */
     public function destroy($id)
     {
-        //
+       $sendemail = sendemail::where('id' , $id)->first();
+       $sendemail->delete();
+       return redirect()->back()->with('succes' , 'Data is deleted Successfully');
+
     }
 }

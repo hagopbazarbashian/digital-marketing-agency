@@ -1,4 +1,9 @@
 <!-- main nav start -->
+<style>
+.right-content-top li a i.bxl-instagram {
+   color: #e4405f; /* Customize the color as needed */
+}
+</style>
 <header class="header-style-1">
     <div class="top_nav_soc">
        <div class="container">
@@ -23,7 +28,10 @@
                       <li>
                          <a href="#"><i class="bx bxl-facebook"></i></a>
                       </li>
-                      <li>
+                       <li>
+                         <a href="https://instagram.com/developer_smart_2020?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr" target="_blank"><i class="bx bxl-instagram"></i></a>
+                      </li>
+                      {{-- <li>
                          <a href="#"><i class="bx bxl-linkedin"></i></a>
                       </li>
                       <li>
@@ -31,10 +39,9 @@
                       </li>
                       <li>
                          <a href="#"><i class="bx bxl-youtube"></i></a>
-                      </li>
+                      </li> --}}
                    </ul>
                 </div>
-                <!--/.right-content-top-->
              </div>
           </div>
        </div>
@@ -92,7 +99,7 @@
                          <a class="opt" href="#search"><i class="bx bx-search"></i></a>
                       </div>
                       <div class="option-item d-none d-xl-inline-block">
-                         <a href="{{ url('contact') }}" class="btn">Free Quote <i class="bx bx-right-arrow-alt"></i></a>
+                         <a href="{{ route('register') }}" class="btn">create my website<i class="bx bx-right-arrow-alt"></i></a>
                       </div>
                    </div>
                    <!--/.others-options-->

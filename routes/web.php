@@ -6,6 +6,8 @@ use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PortfolioUserController;
 use App\Http\Controllers\SinglePortfolio;
+use App\Http\Controllers\MyUserRegisterController;
+use App\Http\Controllers\MyUserLoginController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminBasicWebPage;
@@ -51,6 +53,12 @@ Route::get('/admin/login',[AdminLoginController::class , 'index'])->name('admin_
 Route::post('/login-submit' , [AdminLoginController::class  , 'login_submit'])->name('admin_login_submit');
 Route::get('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin_logout');
 
+//Register User System
+Route::get('register' , [MyUserRegisterController::class , 'index'])->name('register');
+Route::post('create' , [MyUserRegisterController::class , 'register'])->name('create');
+
+//Login System
+Route::get('login' , [MyUserLoginController::class , 'index'])->name('login');
 
 Route::middleware('admin:admin')->group(function () {
     Route::resource('admin' , AdminHomeController::class);
