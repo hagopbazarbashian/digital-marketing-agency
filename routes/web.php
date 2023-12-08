@@ -59,6 +59,7 @@ Route::post('create' , [MyUserRegisterController::class , 'register'])->name('cr
 
 //Login System
 Route::get('login' , [MyUserLoginController::class , 'index'])->name('login');
+Route::post('submit' , [MyUserLoginController::class , 'login_submit'])->name('submit');
 
 Route::middleware('admin:admin')->group(function () {
     Route::resource('admin' , AdminHomeController::class);

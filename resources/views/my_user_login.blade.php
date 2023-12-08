@@ -3,22 +3,23 @@
  <div class="container">
     <div class="row">
       <div class="col-xl-6 login-signup-box offset-xl-3" style="margin: 170px 0 0 0;">
-        <div class="utf-login-register-page-aera margin-bottom-50"> 
+        <div class="utf-login-register-page-aera margin-bottom-50">
           <div class="utf-welcome-text-item">
             <h3>Welcome Back Sign in to Continue</h3>
-            <span>Don't Have an Account? <a href="{{ route('register') }}">Sign Up!</a></span> 
+            <span>Don't Have an Account? <a href="{{ route('register') }}">Sign Up!</a></span>
 		  </div>
-          <form method="post" id="login-form">
+          <form  action="{{route('submit')}}" method="post" id="login-form">
+            @csrf
             <div class="utf-no-border">
-              <input type="text" class="utf-with-border" name="emailaddress" id="emailaddress" placeholder="Email Address" required/>
+              <input type="text" class="utf-with-border" name="email" id="emailaddress" placeholder="Email Address" required/>
             </div>
             <div class="utf-no-border">
               <input type="password" class="utf-with-border" name="password" id="password" placeholder="Password" required/>
             </div>
-			<div class="checkbox margin-top-10">
-				<input type="checkbox" id="two-step">
-				<label for="two-step"><span class="checkbox-icon"></span> Remember Me</label>
-			</div>
+            <div class="checkbox margin-top-10">
+                <input type="checkbox" id="two-step" name="remember_me" {{ old('remember_me') ? 'checked' : '' }}>
+                <label for="two-step"><span class="checkbox-icon"></span> Remember Me</label>
+            </div>
             <a href="forgot-password.html" class="forgot-password">Forgot Password?</a>
           </form>
           <button class="button full-width utf-button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">Log In <i class="icon-feather-chevron-right"></i></button>

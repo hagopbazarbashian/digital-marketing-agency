@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('password');
+            $table->boolean('remember_me')->default(false);
             $table->integer('status')->default('0');
             $table->timestamps();
         });
