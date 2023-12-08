@@ -8,12 +8,14 @@ use App\Http\Controllers\PortfolioUserController;
 use App\Http\Controllers\SinglePortfolio;
 use App\Http\Controllers\MyUserRegisterController;
 use App\Http\Controllers\MyUserLoginController;
+use App\Http\Controllers\Myuser\MyUserHomeController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminBasicWebPage;
 use App\Http\Controllers\Admin\AdminSingleBasicPage;
 use App\Http\Controllers\Admin\PortfolioController;
 use App\Http\Controllers\Admin\SendEmailToUserController;
+
 
 
 /*
@@ -70,4 +72,12 @@ Route::middleware('admin:admin')->group(function () {
     Route::resource('portfolio-admin', PortfolioController::class);
     // Send Email To User
     Route::resource('send-email', SendEmailToUserController::class);
+});
+
+//For My User 
+Route::middleware('myuser:myuser')->group(function () {
+
+   Route::resource('myuser' , MyUserHomeController::class);
+
+
 });

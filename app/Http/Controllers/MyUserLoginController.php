@@ -28,9 +28,8 @@ class MyUserLoginController extends Controller
 
         $remember = $request->has('remember_me'); // Check if the "Remember Me" checkbox is selected
 
-        if(Auth::guard('admin')->attempt($credential, $remember)) {
-            dd('test');
-            return redirect()->route('admin.index');
+        if(Auth::guard('myuser')->attempt($credential, $remember)) {
+            return redirect()->route('myuser.index');
         } else {
             return redirect()->route('login')->with('error', 'Information is not correct!');
         }

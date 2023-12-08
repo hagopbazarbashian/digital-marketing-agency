@@ -43,6 +43,10 @@ return [
         'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
+        ],
+        'myuser' => [
+            'driver' => 'session',
+            'provider' => 'myusers',
         ]
     ],
 
@@ -80,6 +84,11 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\Admin::class, // Replace with the correct Admin model path
         ],
+        'myusers' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\myuser::class, 
+        ],
+
     ],
 
     /*
@@ -107,6 +116,13 @@ return [
 
         'admins' => [
             'provider' => 'admins',
+            'table' => 'password_resets',
+            'expire' => 60,  
+            'throttle' => 60,
+        ],
+
+        'myusers' => [
+            'provider' => 'myusers',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
