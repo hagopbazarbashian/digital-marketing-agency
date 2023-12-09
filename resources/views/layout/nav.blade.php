@@ -99,7 +99,7 @@
                          <a class="opt" href="#search"><i class="bx bx-search"></i></a>
                       </div>
                       <div class="option-item d-none d-xl-inline-block">
-                         <a href="{{ route('register') }}" class="btn">create my website<i class="bx bx-right-arrow-alt"></i></a>
+                         <a href="{{ route('add_website') }}" class="btn">Request a new website<i class="bx bx-right-arrow-alt"></i></a>
                       </div>
                    </div>
                    <!--/.others-options-->

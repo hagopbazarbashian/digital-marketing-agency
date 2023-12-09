@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\AdminBasicWebPage;
 use App\Http\Controllers\Admin\AdminSingleBasicPage;
 use App\Http\Controllers\Admin\PortfolioController;
 use App\Http\Controllers\Admin\SendEmailToUserController;
+use App\Http\Controllers\Admin\AdminAddWebsiteController;
 
 
 
@@ -55,13 +56,10 @@ Route::get('/admin/login',[AdminLoginController::class , 'index'])->name('admin_
 Route::post('/login-submit' , [AdminLoginController::class  , 'login_submit'])->name('admin_login_submit');
 Route::get('/admin/logout', [AdminLoginController::class, 'logout'])->name('admin_logout');
 
-//Register User System
-Route::get('register' , [MyUserRegisterController::class , 'index'])->name('register');
+//Add New Web site
+Route::get('add-website' , [MyUserRegisterController::class , 'index'])->name('add_website');
 Route::post('create' , [MyUserRegisterController::class , 'register'])->name('create');
 
-//Login System
-Route::get('login' , [MyUserLoginController::class , 'index'])->name('login');
-Route::post('submit' , [MyUserLoginController::class , 'login_submit'])->name('submit');
 
 Route::middleware('admin:admin')->group(function () {
     Route::resource('admin' , AdminHomeController::class);
@@ -72,12 +70,14 @@ Route::middleware('admin:admin')->group(function () {
     Route::resource('portfolio-admin', PortfolioController::class);
     // Send Email To User
     Route::resource('send-email', SendEmailToUserController::class);
+    // Website
+    Route::resource('website', AdminAddWebsiteController::class);  
 });
 
-//For My User 
-Route::middleware('myuser:myuser')->group(function () {
+//For My User
+// Route::middleware('myuser:myuser')->group(function () {
 
-   Route::resource('myuser' , MyUserHomeController::class);
+//    Route::resource('myuser' , MyUserHomeController::class);
 
 
-});
+// });
