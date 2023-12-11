@@ -4,17 +4,19 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\addwebsiteform;
 
 class AdminAddWebsiteController extends Controller
 {
     /**
-     * Display a listing of the resource.  
+     * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        $myusers = addwebsiteform::orderBy('created_at', 'desc')->get();
+         return view('admin.add_website',compact('myusers'));
     }
 
     /**
@@ -24,7 +26,7 @@ class AdminAddWebsiteController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -57,7 +59,8 @@ class AdminAddWebsiteController extends Controller
      */
     public function edit($id)
     {
-        //
+         $addwebsiteform =addwebsiteform::where('id' ,$id)->first();
+         return view('admin.add_website_edit',compact('addwebsiteform'));
     }
 
     /**
@@ -69,7 +72,23 @@ class AdminAddWebsiteController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $request->validate([
+            'name'=>'required',
+            'lastname'=>'required',
+            'phonenumber'=>'required',
+            'websitekind'=>'required | max:100',
+            'message'=>'required | max:100'
+       ]);
+
+        $addwebsiteform =addwebsiteform::where('id' ,$id)->first();
+        $addwebsiteform->update([
+            'name'=>$request->input('name'),
+            'lastname'=>$request->input('lastname'),
+            'phonenumber'=>$request->input('phonenumber'),
+            'websitekind'=>$request->input('websitekind'),
+            'message'=>$request->input('message')
+        ]);
     }
 
     /**
@@ -82,4 +101,5 @@ class AdminAddWebsiteController extends Controller
     {
         //
     }
+
 }

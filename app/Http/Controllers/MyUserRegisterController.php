@@ -25,7 +25,7 @@ class MyUserRegisterController extends Controller
        ]);
 
 
-       $myuser = myuser::create([
+       $myuser = addwebsiteform::create([
             'name'=>$request->input('name'),
             'lastname'=>$request->input('lastname'),
             'phonenumber'=>$request->input('phonenumber'),

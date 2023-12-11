@@ -8,7 +8,6 @@
         </div>
 
         <ul class="sidebar-menu">
-
             <li class="{{ request()->routeIs('admin.index') ? 'active' : '' }}"><a class="nav-link" href="{{route('admin.index')}}" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard"><i class="fas fa-hand-point-right"></i> <span>Dashboard</span></a></li>
             <li class="{{ request()->routeIs('admin.create') ? 'active' : '' }}"><a class="nav-link" href="{{route('admin.create')}}" data-bs-toggle="tooltip" data-bs-placement="right" title="Why Choose Items"><i class="fas fa-hand-point-right"></i> <span>Contact User</span></a></li>
             <li class="{{ request()->routeIs('portfolio-admin.index') ? 'active' : '' }}"><a class="nav-link" href="{{route('portfolio-admin.index')}}" data-bs-toggle="tooltip" data-bs-placement="right" title="Why Choose Items"><i class="fas fa-hand-point-right"></i> <span>Portfolio</span></a></li>

@@ -31,7 +31,7 @@ class AdminHomeController extends Controller
      */
     public function create()
     {
-        $contacts = contact::get();
+        $contacts = contact::orderBy('created_at', 'desc')->get();
         return view('admin.contact',compact('contacts'));
     }
 
