@@ -17,7 +17,7 @@
                         @method('PUT')
                         <div class="form-group mb-3">
                             <label>name *</label>
-                            <input type="text" class="form-control" name="email" value="{{$addwebsiteform->name}}">
+                            <input type="text" class="form-control" name="name" value="{{$addwebsiteform->name}}">
                         </div>
                         <div class="form-group mb-3">
                             <label>Last Name *</label>

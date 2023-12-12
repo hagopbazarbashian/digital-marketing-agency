@@ -29,7 +29,7 @@
                          <a href="#"><i class="bx bxl-facebook"></i></a>
                       </li>
                        <li>
-                         <a href="https://instagram.com/developer_smart_2020?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr" target="_blank"><i class="bx bxl-instagram"></i></a>
+                         <a href="https://instagram.com/smart_developer_web?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr" target="_blank"><i class="bx bxl-instagram"></i></a>
                       </li>
                       {{-- <li>
                          <a href="#"><i class="bx bxl-linkedin"></i></a>

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\addwebsiteform;
+use App\Mail\CreatewebsiteMail;
+use Illuminate\Support\Facades\Mail;
 
 class AdminAddWebsiteController extends Controller
 {
@@ -81,14 +83,19 @@ class AdminAddWebsiteController extends Controller
             'message'=>'required | max:100'
        ]);
 
-        $addwebsiteform =addwebsiteform::where('id' ,$id)->first();
-        $addwebsiteform->update([
+         $sendemail =addwebsiteform::where('id' ,$id)->first();
+        
+         $sendemail->update([
             'name'=>$request->input('name'),
             'lastname'=>$request->input('lastname'),
             'phonenumber'=>$request->input('phonenumber'),
             'websitekind'=>$request->input('websitekind'),
             'message'=>$request->input('message')
         ]);
+
+        $mail = Mail::to($sendemail->lastname)->send(new CreatewebsiteMail($sendemail));
+        return redirect()->back()->with('succes' , 'your email was sent agian successfully');
+        
     }
 
     /**

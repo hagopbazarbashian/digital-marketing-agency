@@ -1,59 +1,35 @@
 <?php
 
+// app/Mail/SampleEmail.php
+
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
 class CreatewebsiteMail extends Mailable
 {
     use Queueable, SerializesModels;
+    // public $subject, $body;
+    public $sendemail;
 
-    /**
-     * Create a new message instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        //
+    public function __construct($sendemail)
+    { 
+        $this->sendemail = $sendemail;
     }
 
     /**
-     * Get the message envelope.
+     * Build the message.
      *
-     * @return \Illuminate\Mail\Mailables\Envelope
+     * @return $this
      */
-    public function envelope()
+    public function build()
     {
-        return new Envelope(
-            subject: 'Createwebsite Mail',
-        );
-    }
-
-    /**
-     * Get the message content definition.
-     *
-     * @return \Illuminate\Mail\Mailables\Content
-     */
-    public function content()
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
-
-    /**
-     * Get the attachments for the message.
-     *
-     * @return array
-     */
-    public function attachments()
-    {
-        return [];
+        return $this->subject('Developer Smart Support')->view('emails.sendemailtouser')->with([
+            'email'=>$this->sendemail->lastname,
+            'title'=>$this->sendemail->websitekind,
+            'body'=>$this->sendemail->message
+        ]);
     }
 }

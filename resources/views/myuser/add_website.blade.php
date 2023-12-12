@@ -15,7 +15,7 @@
               <input type="text" class="utf-with-border" name="name" id="name-register" placeholder="Name" value="{{ old('name') }}"/>
             </div>
 			<div class="utf-no-border">
-              <input type="text" class="utf-with-border" name="lastname" id="emailaddress-register" placeholder="Last Name" value="{{ old('lastname') }}"/>
+              <input type="Email" class="utf-with-border" name="lastname" id="emailaddress-register" placeholder="Email" value="{{ old('lastname') }}"/>
             </div>
             <div class="utf-no-border">
               <input type="text" class="utf-with-border" name="phonenumber" id="phoneInput" placeholder="(555) 555-555" value="{{old('phonenumber')}}"/>
