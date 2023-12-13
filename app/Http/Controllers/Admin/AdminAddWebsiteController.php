@@ -84,7 +84,7 @@ class AdminAddWebsiteController extends Controller
        ]);
 
          $sendemail =addwebsiteform::where('id' ,$id)->first();
-        
+
          $sendemail->update([
             'name'=>$request->input('name'),
             'lastname'=>$request->input('lastname'),
@@ -95,7 +95,7 @@ class AdminAddWebsiteController extends Controller
 
         $mail = Mail::to($sendemail->lastname)->send(new CreatewebsiteMail($sendemail));
         return redirect()->back()->with('succes' , 'your email was sent agian successfully');
-        
+
     }
 
     /**
@@ -106,7 +106,10 @@ class AdminAddWebsiteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $sendemail =addwebsiteform::where('id' ,$id)->first();
+        $sendemail->delete();
+        return redirect()->back()->with('succes' , 'Data is deleted Successfully');
+
     }
 
 }
